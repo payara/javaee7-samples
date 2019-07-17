@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 
 import org.javaee7.jaxrs.ejb.lookup.iface.jar.HelloEndpoint;
 import org.javaee7.jaxrs.ejb.lookup.iface.war.DefaultInterfaceApplication;
+import org.javaee7.jaxrs.ejb.lookup.iface.war.IllegalInterfaceBean;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;
@@ -32,6 +33,8 @@ import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 
 /**
+ * Tests for use cases with EAR as the deployed archive.
+ *
  * @author David Matějček
  */
 @RunWith(Arquillian.class)
@@ -116,6 +119,11 @@ public class EarTest {
     }
 
 
+    /**
+     * Tests stateless bean with no interface.
+     *
+     * @throws Exception
+     */
     @Test
     public void testSimplestBean() throws Exception {
         final WebTarget webTarget = this.targetBase.path("/default-interface/default-interface-app/simplest/greet");
@@ -125,6 +133,14 @@ public class EarTest {
     }
 
 
+    /**
+     * Tests stateless bean with an interface placed in a library (not ejb module), without any
+     * Local or Remote interface.
+     * This interface still can be used as a local business interface (as if it would be annotated
+     * by <code>@Local</code>).
+     *
+     * @throws Exception
+     */
     @Test
     public void testInterfaceWithNoLocalOrRemoteAnnotation() throws Exception {
         final WebTarget webTarget = this.targetBase
@@ -136,8 +152,8 @@ public class EarTest {
 
 
     /**
-     * IllegalInterfaceBean implements an interface from javax.ejb package, which is not allowed.
-     * It should not respond.
+     * {@link IllegalInterfaceBean} implements an interface from javax.ejb package, which is not
+     * allowed. The bean still can be mapped with the usage of it's own name.
      *
      * @throws Exception
      */
@@ -151,6 +167,19 @@ public class EarTest {
     }
 
 
+    /**
+     * This test is for PAYARA-3922 and PAYARA-3121 and the situation, where ear contains more war
+     * files with same bean names and application contexts (three war files in this test).
+     * <ol>
+     * <li>war1: stateless bean with default name mapping.
+     * <li>war2: stateless bean with the name="DuplicitBean2" - should not be in a conflict, because
+     * it uses different bean name for mapping and different war context.
+     * <li>war3: stateless bean with default name mapping - should not be in a conflict, because
+     * it uses different war context.
+     * </ol>
+     *
+     * @throws Exception
+     */
     @Test
     public void testSameBeanNames() throws Exception {
         final WebTarget t1 = this.targetBase.path("/same-bean-name-1/same-bean-name-app/same-bean-name-bean/ok");

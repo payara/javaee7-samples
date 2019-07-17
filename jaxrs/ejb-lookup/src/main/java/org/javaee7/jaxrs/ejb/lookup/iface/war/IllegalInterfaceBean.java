@@ -15,7 +15,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- * javax.ejb.* classes are not allowed as bussines interfaces, but the bean still can be mapped.
+ * javax.ejb.* classes are not allowed as business interfaces, but the bean still can be mapped.
  *
  * @author David Matejcek
  */
