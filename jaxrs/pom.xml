@@ -38,7 +38,7 @@
         <module>request-binding</module>
         <module>resource-validation</module>
         <module>server-negotiation</module>
-        <module>simple-get</module>
+        <module>simple-methods</module>
         <module>singleton</module>
         <module>readerwriter-injection</module>
         <module>jaxrs-security-declarative</module>
