@@ -96,6 +96,11 @@ local.properties
 # Testing environment specific
 derby.log
 
+######################
+# VSCode
+######################
+
+.vscode/
 
 ######################
 # Liberty tools
