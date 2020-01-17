@@ -1,5 +1,5 @@
 /** Copyright Payara Services Limited **/
-package org.javaee7.jaxrs.simple.get;
+package org.javaee7.jaxrs.simple.methods;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
