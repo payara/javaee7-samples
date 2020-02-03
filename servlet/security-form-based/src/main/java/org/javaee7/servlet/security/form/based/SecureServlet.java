@@ -1,4 +1,3 @@
-<!-- 
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  *
@@ -38,19 +37,47 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
--->
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+package org.javaee7.servlet.security.form.based;
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Error Mapping Sample - 404 page not found</title>
-    </head>
-    <body>
-        <h1>Error Mapping Sample - 404 page not found</h1>
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * @author Arun Gupta
+ * @author Arjan Tijms
+ */
+@WebServlet("/SecureServlet")
+public class SecureServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         
-        Go <a href="${pageContext.request.contextPath}/index.jsp">home</a>.
-    </body>
-</html>
+        response.getWriter().print(
+                
+            "<html>" +
+                "<head>" +
+                    "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">" +
+                    "<title>Form-based Security - Success</title>" +
+                "</head>" +
+                    
+                "<body>" +
+                    "<h2>Form-based Security - Success</h2>" +
+                "</body>" +
+            "</html>" 
+            
+            );
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.getWriter().print("my POST");
+    }
+}

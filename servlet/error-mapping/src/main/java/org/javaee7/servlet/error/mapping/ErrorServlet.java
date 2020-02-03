@@ -1,4 +1,3 @@
-<!-- 
 /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  *
@@ -38,26 +37,36 @@
  * only if the new code is made subject to such option by the copyright
  * holder.
  */
--->
+package org.javaee7.servlet.error.mapping;
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+import java.io.IOException;
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Form-Based Login Page</title>
-    </head>
-    <body>
-        <h1>Form-Based Login Page</h1>
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-        <form method="POST" action="j_security_check">
-            Username: <input type="text" name="j_username"> <p/>
-            Password: <input type="password" name="j_password" autocomplete="off"> <p/>
-            <input type="submit" value="Submit" name="submitButton">
-            <input type="reset" value="Reset">
-        </form>
+/**
+ * @author Arun Gupta
+ * @author Arjan Tijms
+ */
+@WebServlet("/error")
+public class ErrorServlet extends HttpServlet {
 
-    </body>
-</html>
+    private static final long serialVersionUID = -3681304530279446784L;
+
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.getWriter().write("!error!");
+    }
+
+}
