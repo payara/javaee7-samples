@@ -5,38 +5,58 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>JSF 2 Ajax</title>
-    </h:head>
-    <h:body>
-        <h1>Ajax in JSF</h1>
-        Username and password must be same for login to succeed, otherwise it fails.
-        <br/>
-        <br/>
-        <h2>Ajax using JavaScript</h2>
-        <h:outputScript
-            name="jsf.js"
-            library="javax.faces"
-            target="body"/>
+        <script>
+            let reloadCount = 0;
 
-        <h:form prependId="false">
-            Name: <h:inputText value="#{user.name}" id="name"/><br/>
-            Password: <h:inputText value="#{user.password}" id="password"/><br/>
-            <h:commandButton value="Login"
-                             type="button"
-                             actionListener="#{user.login}"
-                             onclick="jsf.ajax.request(this, event, {execute:
-                                                 'name password', render: 'status'});
-                                     return false;"/>
-            <h:outputText value="#{user.status}" id="status"/>
+            let getMessage = () => document.getElementById('message');
+
+            function displayErrorMessage(data) {
+                getMessage().innerText =
+                    'Error Description: ' + data.description
+                    + '\nError Name: ' + data.errorName
+                    + '\nError errorMessage: ' + data.errorMessage
+                    + '\nResponse Code: ' + data.responseCode
+                    + '\nResponse Text: ' + data.responseText
+                    + '\nStatus: ' + data.status
+                    + '\nType: ' + data.type;
+            }
+            function displaySuccessMessage() {
+                getMessage().innerText = 'Successful AJAX request';
+            }
+        </script>
+    </h:head>
+    <body>
+
+        <!-- The message on the page -->
+        <pre id="message">No AJAX requests sent</pre>
+
+        <h:form id="form">
+
+            <!-- A working script, that will display the success message when the panel is reloaded via AJAX -->
+            <h:panelGroup id="countscript" style="display:none">
+                <script>
+                    if (reloadCount++ > 0) {
+                        displaySuccessMessage();
+                    }
+                </script>
+            </h:panelGroup>
+
+            <!-- A script that breaks when reloaded via AJAX prior to CUSTCOM-253 -->
+            <h:panelGroup id="brokenscript" style="display:none">
+                <script>
+                    let notEmptyString = "#{emptyValues.notEmptyString}";
+                    let emptyString= "#{emptyValues.emptyString}";
+                    let nullString = "#{emptyValues.nullString}";
+                </script>
+            </h:panelGroup>
+
+            <!-- An AJAX link to display a success message, or any AJAX errors if they occur -->
+            <h:commandLink id="link" value="AJAX request">
+                <f:ajax event="click" render="form:brokenscript form:countscript"
+                        onerror="displayErrorMessage" />
+            </h:commandLink>
         </h:form>
-        <h2>Declarative Ajax</h2>
-        <h:form prependId="false">
-            Name: <h:inputText value="#{user.name}" id="name2"/><br/>
-            Password: <h:inputText value="#{user.password}" id="password2"/><br/>
-            <h:commandButton value="Login" type="button" actionListener="#{user.login}">
-                <f:ajax execute="name2 password2" render="status2"/>
-            </h:commandButton>
-            <h:outputText value="#{user.status}" id="status2"/>
-        </h:form>
-    </h:body>
+
+    </body>
 </html>
 
