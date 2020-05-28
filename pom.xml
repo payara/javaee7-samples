@@ -384,30 +384,28 @@
 
 
         <!-- ###  PAYARA  ### -->
-
         <profile>
-            <id>payara4</id>
+            <id>Payara Community</id>
             <activation>
                 <property>
                     <name>payara.version</name>
-                    <value>/4.*/</value>
+                    <value>/^[5-9]\.[0-9]{4}\.[0-9]{1,2}.*/</value>
                 </property>
             </activation>
             <properties>
-                <payara.arquillian.version>1.4</payara.arquillian.version>
-                <payara.directory.name>payara41</payara.directory.name>
-                <payara.version.major>4</payara.version.major>
-                <payara_domain>payaradomain</payara_domain>
-                <skipServletClientCertificateCommonName>true</skipServletClientCertificateCommonName>
+                <payara.directory.name>payara5</payara.directory.name>
+                <payara.version.major>5</payara.version.major>
+                <payara_domain>production</payara_domain>
+                <payara.arquillian.version>2.2</payara.arquillian.version>
             </properties>
         </profile>
 
         <profile>
-            <id>payara5</id>
+            <id>Payara Enterprise</id>
             <activation>
                 <property>
                     <name>payara.version</name>
-                    <value>/5.*/</value>
+                    <value>/^[5-9]\.[0-9]{1,2}\.[0-9].*/</value>
                 </property>
             </activation>
             <properties>
