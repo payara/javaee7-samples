@@ -59,7 +59,7 @@
         <tomee.version>7.0.2</tomee.version>
         <tomcat.version>9.0.4</tomcat.version>
 
-        <payara.arquillian.version>2.2</payara.arquillian.version>
+        <payara.arquillian.version>2.3.RC1</payara.arquillian.version>
     </properties>
 
     <prerequisites>
