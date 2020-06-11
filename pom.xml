@@ -50,7 +50,7 @@
             (these are downloaded and installed in these versions by Maven for the CI profiles)
          -->
         <payara.version>4.1.2.181</payara.version>
-        <payara_domain>payaradomain</payara_domain>
+        <payara_domain>production</payara_domain>
         <glassfish.client.version>5.0</glassfish.client.version> <!-- For remote EJB for Payara and Glassfish -->
         <glassfish.version>4.1.1</glassfish.version>
         <liberty.version>16.0.0.4</liberty.version>
@@ -295,14 +295,14 @@
 
     <build>
         <finalName>${project.artifactId}</finalName>
-        
+
         <testResources>
             <testResource>
                 <directory>src/test/resources</directory>
                 <filtering>true</filtering>
             </testResource>
         </testResources>
-        
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -395,8 +395,6 @@
             <properties>
                 <payara.directory.name>payara5</payara.directory.name>
                 <payara.version.major>5</payara.version.major>
-                <payara_domain>production</payara_domain>
-                <payara.arquillian.version>2.2</payara.arquillian.version>
             </properties>
         </profile>
 
@@ -411,8 +409,6 @@
             <properties>
                 <payara.directory.name>payara5</payara.directory.name>
                 <payara.version.major>5</payara.version.major>
-                <payara_domain>production</payara_domain>
-                <payara.arquillian.version>2.2</payara.arquillian.version>
             </properties>
         </profile>
 
@@ -600,7 +596,7 @@
                         </exclusion>
                     </exclusions>
                 </dependency>
-                
+
                 <dependency>
                     <groupId>fish.payara.extras</groupId>
                     <artifactId>payara-embedded-all</artifactId>
