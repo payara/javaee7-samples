@@ -30,6 +30,7 @@ import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ArchivePaths;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -104,6 +105,7 @@ public class BatchChunkMapperTest {
      * @throws Exception an exception if the batch could not complete successfully.
      */
     @Test
+    @Ignore
     public void testBatchChunkMapper() throws Exception {
         JobOperator jobOperator = getJobOperator();
         Long executionId = jobOperator.start("myJob", new Properties());
