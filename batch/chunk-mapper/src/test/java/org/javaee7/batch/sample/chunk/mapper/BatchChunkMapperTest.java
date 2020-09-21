@@ -105,7 +105,6 @@ public class BatchChunkMapperTest {
      * @throws Exception an exception if the batch could not complete successfully.
      */
     @Test
-    @Ignore
     public void testBatchChunkMapper() throws Exception {
         JobOperator jobOperator = getJobOperator();
         Long executionId = jobOperator.start("myJob", new Properties());
