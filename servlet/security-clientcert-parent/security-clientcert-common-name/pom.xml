@@ -43,13 +43,7 @@
 
     <profiles>
         <profile>
-            <id>payara4</id>
-            <properties>
-                <skipServletClientCertificate>true</skipServletClientCertificate>
-            </properties>
-        </profile>
-        <profile>
-            <id>payara-server-emebedded</id>
+            <id>payara-server-embedded</id>
             <properties>
                 <skipServletClientCertificate>true</skipServletClientCertificate>
             </properties>

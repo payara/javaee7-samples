@@ -4,12 +4,6 @@
     http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
 
     <defaultProtocol type="Servlet 3.0"/>
-    
-    <container qualifier="payara4">
-        <configuration>
-            <property name="domain">${payara_domain}</property>
-        </configuration>
-    </container>
 
     <container qualifier="payara5">
         <configuration>
