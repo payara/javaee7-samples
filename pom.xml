@@ -50,7 +50,7 @@
             (these are downloaded and installed in these versions by Maven for the CI profiles)
          -->
         <payara.version>4.1.2.181</payara.version>
-        <payara_domain>production</payara_domain>
+        <payara_domain>domain1</payara_domain>
         <glassfish.client.version>5.0</glassfish.client.version> <!-- For remote EJB for Payara and Glassfish -->
         <glassfish.version>4.1.1</glassfish.version>
         <liberty.version>16.0.0.4</liberty.version>
