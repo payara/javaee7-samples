@@ -41,6 +41,7 @@ package org.javaee7.batch.sample.chunk.mapper;
 
 import java.io.Serializable;
 import java.util.StringTokenizer;
+import java.util.concurrent.atomic.AtomicInteger;
 import javax.batch.api.BatchProperty;
 import javax.batch.api.chunk.AbstractItemReader;
 import javax.batch.runtime.context.JobContext;
@@ -52,7 +53,7 @@ import javax.inject.Named;
  */
 @Named
 public class MyItemReader extends AbstractItemReader {
-    public static int totalReaders = 0;
+    static AtomicInteger totalReaders = new AtomicInteger();
     private int readerId;
 
     private StringTokenizer tokens;
@@ -79,7 +80,7 @@ public class MyItemReader extends AbstractItemReader {
                 builder.append(",");
         }
 
-        readerId = ++totalReaders;
+        readerId = totalReaders.incrementAndGet();
         tokens = new StringTokenizer(builder.toString(), ",");
     }
 
