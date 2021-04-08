@@ -87,9 +87,9 @@ public class BatchChunkMapperTest {
             .addAsWebInfResource(INSTANCE, ArchivePaths.create("beans.xml"))
             .addAsResource("META-INF/batch-jobs/myJob.xml")
             .addAsLibraries(awaitability());
-        
+
         System.out.println(war.toString(true));
-        
+
         return war;
     }
 
@@ -108,9 +108,9 @@ public class BatchChunkMapperTest {
         JobOperator jobOperator = getJobOperator();
         Long executionId = jobOperator.start("myJob", new Properties());
         JobExecution jobExecution = jobOperator.getJobExecution(executionId);
-        
+
         final JobExecution lastExecution = BatchTestHelper.keepTestAlive(jobExecution);
-            
+
         await().atMost(ONE_MINUTE)
         .with().pollInterval(FIVE_HUNDRED_MILLISECONDS)
         .until(                                                                                                                                                                                      new Callable<Boolean>() { @Override public Boolean call() throws Exception {
@@ -124,21 +124,21 @@ public class BatchChunkMapperTest {
 
                 // <1> The read count should be 20 elements. Check +MyItemReader+.
                 assertEquals(20L, metricsMap.get(READ_COUNT).longValue());
-                
+
                 // <2> The write count should be 10. Only half of the elements read are processed to be written.
                 assertEquals(10L, metricsMap.get(WRITE_COUNT).longValue());
-                
+
                 // Number of elements by the item count value on myJob.xml, plus an additional transaction for the
                 // remaining elements by each partition.
                 long commitCount = (10L / 3 + (10 % 3 > 0 ? 1 : 0)) * 2;
-                
+
                 // <3> The commit count should be 8. Checkpoint is on every 3rd read, 4 commits for read elements and 2 partitions.
                 assertEquals(commitCount, metricsMap.get(COMMIT_COUNT).longValue());
             }
         }
 
         // <4> Make sure that all the partitions were created.
-        assertEquals(2L, totalReaders);
+        assertEquals(2L, totalReaders.get());
         
         // <5> Job should be completed.
         assertEquals(COMPLETED, lastExecution.getBatchStatus());
