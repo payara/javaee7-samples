@@ -10,7 +10,7 @@
     <name>Java EE 7 Sample: javaee7-samples</name>
 
     <properties>
-        <arquillian.version>1.4.1.Final</arquillian.version>
+        <arquillian.version>1.7.0.Alpha9</arquillian.version>
         <java.min.version>1.8</java.min.version>
         <maven.min.version>3.0.0</maven.min.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,7 +59,7 @@
         <tomee.version>7.0.2</tomee.version>
         <tomcat.version>9.0.4</tomcat.version>
 
-        <payara.arquillian.version>2.3</payara.arquillian.version>
+        <payara.arquillian.version>2.4.1</payara.arquillian.version>
     </properties>
 
     <prerequisites>
@@ -469,16 +469,10 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
-                            <environmentVariables>
-                                <GLASSFISH_HOME>${session.executionRootDirectory}/target/${payara.directory.name}</GLASSFISH_HOME>
-                            </environmentVariables>
-                            <!-- This needs tuning -->
                             <systemPropertyVariables>
-                                <glassfishRemote_gfHome>${session.executionRootDirectory}/target/${payara.directory.name}</glassfishRemote_gfHome>
-                                <javaEEServer>payara-remote</javaEEServer>
+                                <payara.home>${session.executionRootDirectory}/target/${payara.directory.name}</payara.home>
                                 <arquillian.launch>payara${payara.version.major}</arquillian.launch>
                                 <payara_domain>${payara_domain}</payara_domain>
-                                <use.cnHost>${use.cnHost}</use.cnHost>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>
@@ -555,7 +549,6 @@
                             <systemProperties>
                                 <skipEAR>${skipEAR}</skipEAR>
                                 <payara.microJar>${session.executionRootDirectory}/target/payara-micro-${payara.version}.jar</payara.microJar>
-                                <use.cnHost>${use.cnHost}</use.cnHost>
                             </systemProperties>
                         </configuration>
                     </plugin>
@@ -654,7 +647,6 @@
                             <systemPropertyVariables>
                                 <javaEEServer>payara-remote</javaEEServer>
                                 <payara_domain>${payara_domain}</payara_domain>
-                                <use.cnHost>${use.cnHost}</use.cnHost>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>
@@ -719,7 +711,6 @@
                             <systemPropertyVariables>
                                 <javaEEServer>payara-remote</javaEEServer>
                                 <payara.httpPort>${payara.httpPort}</payara.httpPort>
-                                <use.cnHost>${use.cnHost}</use.cnHost>
                                 <skipEAR>${skipEAR}</skipEAR>
                             </systemPropertyVariables>
                         </configuration>
