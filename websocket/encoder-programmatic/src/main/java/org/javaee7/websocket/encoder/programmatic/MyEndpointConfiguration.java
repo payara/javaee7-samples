@@ -45,11 +45,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.websocket.Decoder;
-import javax.websocket.Encoder;
-import javax.websocket.Endpoint;
-import javax.websocket.server.ServerApplicationConfig;
-import javax.websocket.server.ServerEndpointConfig;
+import jakarta.websocket.Decoder;
+import jakarta.websocket.Encoder;
+import jakarta.websocket.Endpoint;
+import jakarta.websocket.server.ServerApplicationConfig;
+import jakarta.websocket.server.ServerEndpointConfig;
 
 /**
  * @author Arun Gupta

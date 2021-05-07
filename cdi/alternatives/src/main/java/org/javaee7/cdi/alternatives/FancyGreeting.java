@@ -39,7 +39,7 @@
  */
 package org.javaee7.cdi.alternatives;
 
-import javax.enterprise.inject.Alternative;
+import jakarta.enterprise.inject.Alternative;
 
 /**
  * @author Arun Gupta

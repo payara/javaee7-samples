@@ -3,7 +3,7 @@ package org.javaee7.cdi.dynamic.interceptor;
 import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
 import static org.junit.Assert.assertEquals;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.javaee7.cdi.dynamic.interceptor.MyBean;
 import org.javaee7.cdi.dynamic.interceptor.extension.CdiExtension;
@@ -33,7 +33,7 @@ public class DynamicInterceptorTest {
                 .addAsLibraries(
                     create(JavaArchive.class)
                         .addClasses(CdiExtension.class, DynamicHelloInterceptor.class, DynamicInterceptorBase.class, Hello.class, HelloInterceptorEnabler.class)
-                        .addAsResource("META-INF/services/javax.enterprise.inject.spi.Extension"))
+                        .addAsResource("META-INF/services/jakarta.enterprise.inject.spi.Extension"))
                 .addAsWebInfResource("beans.xml");
         
         System.out.println(war.toString(true));

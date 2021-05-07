@@ -11,12 +11,12 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.annotation.Resource;
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.BatchRuntime;
-import javax.batch.runtime.JobExecution;
-import javax.ejb.EJB;
-import javax.jms.*;
+import jakarta.annotation.Resource;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.BatchRuntime;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.ejb.EJB;
+import jakarta.jms.*;
 import java.util.Properties;
 import java.util.Random;
 

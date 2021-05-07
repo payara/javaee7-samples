@@ -40,8 +40,8 @@
 
 package org.javaee7.batch.batch.listeners;
 
-import javax.batch.api.listener.AbstractJobListener;
-import javax.inject.Named;
+import jakarta.batch.api.listener.AbstractJobListener;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

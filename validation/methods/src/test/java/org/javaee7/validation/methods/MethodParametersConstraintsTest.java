@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.validation.ConstraintViolationException;
+import jakarta.inject.Inject;
+import jakarta.validation.ConstraintViolationException;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -41,7 +41,7 @@ public class MethodParametersConstraintsTest {
     @Test
     public void methodSizeTooLong() {
         thrown.expect(ConstraintViolationException.class);
-        thrown.expectMessage("javax.validation.constraints.Size");
+        thrown.expectMessage("jakarta.validation.constraints.Size");
         thrown.expectMessage("org.javaee7.validation.methods.MyBean.sayHello");
         bean.sayHello("Duke");
     }
@@ -54,7 +54,7 @@ public class MethodParametersConstraintsTest {
     @Test
     public void showDateFromPast() {
         thrown.expect(ConstraintViolationException.class);
-        thrown.expectMessage("javax.validation.constraints.Future");
+        thrown.expectMessage("jakarta.validation.constraints.Future");
         thrown.expectMessage("org.javaee7.validation.methods.MyBean.showDate");
         bean.showDate(false);
     }
@@ -67,7 +67,7 @@ public class MethodParametersConstraintsTest {
     @Test
     public void multipleParametersWithEmptyList() {
         thrown.expect(ConstraintViolationException.class);
-        thrown.expectMessage("javax.validation.constraints.Size");
+        thrown.expectMessage("jakarta.validation.constraints.Size");
         thrown.expectMessage("showList.arg0");
         bean.showList(new ArrayList<String>(), "foo");
     }
@@ -75,7 +75,7 @@ public class MethodParametersConstraintsTest {
     @Test
     public void multipleParametersNullSecondParameter() {
         thrown.expect(ConstraintViolationException.class);
-        thrown.expectMessage("javax.validation.constraints.NotNull");
+        thrown.expectMessage("jakarta.validation.constraints.NotNull");
         thrown.expectMessage("showList.arg1");
 
         List<String> list = new ArrayList<>();

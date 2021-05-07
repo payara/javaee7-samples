@@ -6,17 +6,17 @@ import static com.jayway.awaitility.Duration.ONE_MINUTE;
 import static java.lang.System.out;
 import static java.lang.Thread.sleep;
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
-import static javax.batch.runtime.BatchStatus.STARTED;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchStatus.STARTED;
 import static org.javaee7.Libraries.awaitability;
 import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
 import static org.junit.Assert.assertEquals;
 
 import java.util.concurrent.Callable;
 
-import javax.batch.runtime.JobExecution;
-import javax.inject.Inject;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.inject.Inject;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -31,7 +31,7 @@ import org.junit.runner.RunWith;
  * The Batch specification does not offer anything to schedule jobs. However, the Java EE plataform offer a few ways
  * that allow you to schedule Batch jobs.
  *
- * Adding a +javax.enterprise.concurrent.Trigger+ to a +javax.enterprise.concurrent.ManagedScheduledExecutorService+
+ * Adding a +jakarta.enterprise.concurrent.Trigger+ to a +jakarta.enterprise.concurrent.ManagedScheduledExecutorService+
  * is possible to trigger an execution of the batch job by specifying the next execution date of the job.
  *
  * include::MyManagedScheduledBatchBean[]
@@ -87,8 +87,8 @@ public class ManagedScheduledBatchTest {
     /**
      * The batch job is scheduled to execute each 15 seconds. We expect to run the batch instance exactly 3 times as
      * defined in the +CountDownLatch+ object. To validate the test expected behaviour we just need to check the
-     * Batch Status in the +javax.batch.runtime.JobExecution+ object. We should get a
-     * +javax.batch.runtime.BatchStatus.COMPLETED+ for every execution.
+     * Batch Status in the +jakarta.batch.runtime.JobExecution+ object. We should get a
+     * +jakarta.batch.runtime.BatchStatus.COMPLETED+ for every execution.
      *
      * @throws Exception an exception if the batch could not complete successfully.
      */

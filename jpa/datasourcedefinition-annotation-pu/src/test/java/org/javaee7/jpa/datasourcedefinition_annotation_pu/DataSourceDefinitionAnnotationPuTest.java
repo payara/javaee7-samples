@@ -4,7 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.javaee7.jpa.datasourcedefinition_annotation_pu.config.DataSourceDefinitionConfig;
 import org.javaee7.jpa.datasourcedefinition_annotation_pu.entity.TestEntity;

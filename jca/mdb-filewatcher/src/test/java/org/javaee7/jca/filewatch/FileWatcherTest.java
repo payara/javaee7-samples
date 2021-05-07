@@ -29,7 +29,7 @@ import static org.jboss.shrinkwrap.api.asset.EmptyAsset.INSTANCE;
 import java.io.File;
 import java.util.concurrent.Callable;
 
-import javax.enterprise.event.Observes;
+import jakarta.enterprise.event.Observes;
 
 import org.javaee7.jca.filewatch.adapter.FileSystemWatcher;
 import org.javaee7.jca.filewatch.event.Created;

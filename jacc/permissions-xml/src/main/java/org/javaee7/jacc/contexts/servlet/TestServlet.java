@@ -46,13 +46,13 @@ import java.io.PrintWriter;
 import java.security.AccessControlException;
 import java.security.AccessController;
 
-import javax.ejb.EJB;
+import jakarta.ejb.EJB;
 import javax.naming.InitialContext;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.javaee7.jacc.contexts.bean.BeanMessageInterface;
 import org.javaee7.jacc.contexts.bean.BeanRootInterface;

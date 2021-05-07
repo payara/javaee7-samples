@@ -1,6 +1,6 @@
 package org.javaee7.jms.temp.destination;
 
-import javax.jms.JMSDestinationDefinition;
+import jakarta.jms.JMSDestinationDefinition;
 
 /**
  * Application scoped JMS resources for the samples.
@@ -9,7 +9,7 @@ import javax.jms.JMSDestinationDefinition;
  */
 @JMSDestinationDefinition(
 	name = Resources.REQUEST_QUEUE, 
-	interfaceName = "javax.jms.Queue", 
+	interfaceName = "jakarta.jms.Queue", 
 	destinationName = "requestQueue", 
 	description = "Queue for service requests")
 public class Resources {

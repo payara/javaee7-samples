@@ -39,12 +39,12 @@
  */
 package org.javaee7.batch.chunk.optional.processor;
 
-//import javax.batch.annotation.CheckpointInfo;
+//import jakarta.batch.annotation.CheckpointInfo;
 
 import java.io.Serializable;
 import java.util.StringTokenizer;
-import javax.batch.api.chunk.AbstractItemReader;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.AbstractItemReader;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

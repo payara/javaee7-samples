@@ -39,9 +39,9 @@
  */
 package org.javaee7.batch.samples.chunk.simple.nobeans;
 
-import javax.batch.api.chunk.ItemProcessor;
-import javax.enterprise.context.Dependent;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.ItemProcessor;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

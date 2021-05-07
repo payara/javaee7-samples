@@ -9,8 +9,8 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.enterprise.context.ContextNotActiveException;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ContextNotActiveException;
+import jakarta.inject.Inject;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;

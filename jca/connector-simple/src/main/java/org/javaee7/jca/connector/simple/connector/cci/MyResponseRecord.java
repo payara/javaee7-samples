@@ -1,6 +1,6 @@
 package org.javaee7.jca.connector.simple.connector.cci;
 
-import javax.resource.cci.Record;
+import jakarta.resource.cci.Record;
 
 /**
  *

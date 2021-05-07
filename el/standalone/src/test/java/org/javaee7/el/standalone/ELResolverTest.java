@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.el.ELProcessor;
+import jakarta.el.ELProcessor;
 
 import static org.junit.Assert.assertEquals;
 

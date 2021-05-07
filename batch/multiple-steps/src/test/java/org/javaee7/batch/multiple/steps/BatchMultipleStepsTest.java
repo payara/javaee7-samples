@@ -1,7 +1,7 @@
 package org.javaee7.batch.multiple.steps;
 
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -61,8 +61,8 @@ public class BatchMultipleStepsTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query +javax.batch.operations.JobOperator#getStepExecutions+ and the
-     * +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query +jakarta.batch.operations.JobOperator#getStepExecutions+ and the
+     * +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * @throws Exception an exception if the batch could not complete successfully.
      */

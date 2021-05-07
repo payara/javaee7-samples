@@ -1,7 +1,7 @@
 package org.javaee7.jca.connector.simple.connector.cci;
 
 import java.io.Serializable;
-import javax.resource.cci.InteractionSpec;
+import jakarta.resource.cci.InteractionSpec;
 
 /**
  *

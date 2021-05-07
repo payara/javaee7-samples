@@ -41,9 +41,9 @@ package org.javaee7.concurrency.managedexecutor;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-import javax.annotation.Resource;
-import javax.ejb.Stateless;
-import javax.enterprise.concurrent.ManagedExecutorService;
+import jakarta.annotation.Resource;
+import jakarta.ejb.Stateless;
+import jakarta.enterprise.concurrent.ManagedExecutorService;
 
 /**
  * @author Arun Gupta

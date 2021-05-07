@@ -1,8 +1,8 @@
 package org.javaee7.batch.samples.scheduling;
 
-import javax.ejb.Local;
-import javax.ejb.Stateless;
-import javax.enterprise.inject.Alternative;
+import jakarta.ejb.Local;
+import jakarta.ejb.Stateless;
+import jakarta.enterprise.inject.Alternative;
 
 /**
  * @author Roberto Cortez

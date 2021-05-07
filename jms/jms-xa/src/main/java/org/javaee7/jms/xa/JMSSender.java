@@ -1,18 +1,18 @@
 package org.javaee7.jms.xa;
 
-import javax.annotation.Resource;
-import javax.ejb.Singleton;
-import javax.inject.Inject;
-import javax.jms.ConnectionFactory;
-import javax.jms.JMSConnectionFactoryDefinition;
-import javax.jms.JMSConnectionFactoryDefinitions;
-import javax.jms.JMSContext;
-import javax.jms.JMSDestinationDefinition;
-import javax.jms.Queue;
+import jakarta.annotation.Resource;
+import jakarta.ejb.Singleton;
+import jakarta.inject.Inject;
+import jakarta.jms.ConnectionFactory;
+import jakarta.jms.JMSConnectionFactoryDefinition;
+import jakarta.jms.JMSConnectionFactoryDefinitions;
+import jakarta.jms.JMSContext;
+import jakarta.jms.JMSDestinationDefinition;
+import jakarta.jms.Queue;
 
 @JMSDestinationDefinition(
     name = "java:app/jms/queue", 
-    interfaceName = "javax.jms.Queue"
+    interfaceName = "jakarta.jms.Queue"
 )
 @JMSConnectionFactoryDefinitions(
     value = {

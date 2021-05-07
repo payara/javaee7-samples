@@ -39,7 +39,7 @@
  */
 package org.javaee7.jsf.resource.handling;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

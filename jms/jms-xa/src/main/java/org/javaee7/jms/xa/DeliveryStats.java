@@ -2,7 +2,7 @@ package org.javaee7.jms.xa;
 
 import java.util.concurrent.CountDownLatch;
 
-import javax.ejb.Singleton;
+import jakarta.ejb.Singleton;
 
 @Singleton
 public class DeliveryStats {

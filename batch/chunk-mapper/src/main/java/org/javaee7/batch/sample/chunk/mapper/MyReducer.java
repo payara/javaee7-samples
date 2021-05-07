@@ -39,8 +39,8 @@
  */
 package org.javaee7.batch.sample.chunk.mapper;
 
-import javax.batch.api.partition.PartitionReducer;
-import javax.inject.Named;
+import jakarta.batch.api.partition.PartitionReducer;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

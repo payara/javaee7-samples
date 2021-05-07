@@ -1,6 +1,6 @@
 package org.javaee7.batch.samples.scheduling;
 
-import javax.batch.runtime.BatchRuntime;
+import jakarta.batch.runtime.BatchRuntime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;

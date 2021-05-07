@@ -39,7 +39,7 @@
  */
 package org.javaee7.websocket.endpoint.programmatic;
 
-import javax.ejb.Stateless;
+import jakarta.ejb.Stateless;
 
 /**
  * @author Arun Gupta

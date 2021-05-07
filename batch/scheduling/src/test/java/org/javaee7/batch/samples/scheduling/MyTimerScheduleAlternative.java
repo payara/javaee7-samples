@@ -1,8 +1,8 @@
 package org.javaee7.batch.samples.scheduling;
 
-import javax.ejb.Schedule;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
+import jakarta.ejb.Schedule;
+import jakarta.ejb.Singleton;
+import jakarta.ejb.Startup;
 
 /**
  * @author Roberto Cortez

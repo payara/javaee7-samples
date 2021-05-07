@@ -1,6 +1,6 @@
 package org.javaee7.websocket.endpoint.async;
 
-import javax.websocket.*;
+import jakarta.websocket.*;
 
 /**
  * 

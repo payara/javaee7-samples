@@ -42,8 +42,8 @@ package org.javaee7.jsf.radio.buttons;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
-import javax.enterprise.context.SessionScoped;
-import javax.inject.Named;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

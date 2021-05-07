@@ -1,17 +1,17 @@
 package org.javaee7.batch.chunk.optional.processor;
 
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -25,8 +25,8 @@ import org.junit.runner.RunWith;
 
 /**
  * The Batch specification provides a Chunk Oriented processing style. This style is defined by enclosing into a
- * transaction a set of reads, process and write operations via +javax.batch.api.chunk.ItemReader+,
- * +javax.batch.api.chunk.ItemProcessor+ and +javax.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
+ * transaction a set of reads, process and write operations via +jakarta.batch.api.chunk.ItemReader+,
+ * +jakarta.batch.api.chunk.ItemProcessor+ and +jakarta.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
  * and aggregated. The transaction is then committed when the defined +checkpoint-policy+ is triggered.
  *
  * include::myJob.xml[]
@@ -61,7 +61,7 @@ public class BatchChunkOptionalProcessorTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query the +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query the +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * The batch process itself will read 10 elements from numbers  1 to 10, and write the same elements. Commits are
      * executed after 3 elements are read.

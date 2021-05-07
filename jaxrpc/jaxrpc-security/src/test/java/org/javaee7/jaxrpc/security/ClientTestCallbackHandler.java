@@ -1,8 +1,8 @@
 /** Copyright Payara Services Limited **/
 package org.javaee7.jaxrpc.security;
 
-import static javax.xml.rpc.Stub.PASSWORD_PROPERTY;
-import static javax.xml.rpc.Stub.USERNAME_PROPERTY;
+import static jakarta.xml.rpc.Stub.PASSWORD_PROPERTY;
+import static jakarta.xml.rpc.Stub.USERNAME_PROPERTY;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

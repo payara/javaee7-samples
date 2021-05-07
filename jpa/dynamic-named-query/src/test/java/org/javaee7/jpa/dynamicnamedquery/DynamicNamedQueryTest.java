@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.javaee7.jpa.dynamicnamedquery.entity.TestEntity;
 import org.javaee7.jpa.dynamicnamedquery.service.TestService;

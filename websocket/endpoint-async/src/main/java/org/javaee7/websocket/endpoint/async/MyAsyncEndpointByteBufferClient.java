@@ -1,8 +1,8 @@
 package org.javaee7.websocket.endpoint.async;
 
 import java.nio.ByteBuffer;
-import javax.websocket.ClientEndpoint;
-import javax.websocket.OnMessage;
+import jakarta.websocket.ClientEndpoint;
+import jakarta.websocket.OnMessage;
 
 /**
  *

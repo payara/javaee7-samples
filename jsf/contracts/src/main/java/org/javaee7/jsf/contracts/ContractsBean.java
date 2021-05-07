@@ -40,8 +40,8 @@
 package org.javaee7.jsf.contracts;
 
 import java.io.Serializable;
-import javax.enterprise.context.SessionScoped;
-import javax.inject.Named;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

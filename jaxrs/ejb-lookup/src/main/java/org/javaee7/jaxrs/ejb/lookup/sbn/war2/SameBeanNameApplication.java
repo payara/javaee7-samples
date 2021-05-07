@@ -4,8 +4,8 @@ package org.javaee7.jaxrs.ejb.lookup.sbn.war2;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
 
 @ApplicationPath("/same-bean-name-app")
 public class SameBeanNameApplication extends Application {

@@ -8,8 +8,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
+import javax.xml.namespace .QName;
+import jakarta.xml.ws.Service;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

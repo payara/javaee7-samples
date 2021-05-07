@@ -40,10 +40,10 @@
 package org.javaee7.batch.batchlet.simple;
 
 import static java.lang.System.out;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 
-import javax.batch.api.AbstractBatchlet;
-import javax.inject.Named;
+import jakarta.batch.api.AbstractBatchlet;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

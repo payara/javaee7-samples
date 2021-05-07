@@ -42,12 +42,12 @@ package org.javaee7.websocket.httpsession;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import javax.servlet.http.HttpSession;
-import javax.websocket.Endpoint;
-import javax.websocket.HandshakeResponse;
-import javax.websocket.server.HandshakeRequest;
-import javax.websocket.server.ServerApplicationConfig;
-import javax.websocket.server.ServerEndpointConfig;
+import jakarta.servlet.http.HttpSession;
+import jakarta.websocket.Endpoint;
+import jakarta.websocket.HandshakeResponse;
+import jakarta.websocket.server.HandshakeRequest;
+import jakarta.websocket.server.ServerApplicationConfig;
+import jakarta.websocket.server.ServerEndpointConfig;
 
 /**
  * @author Arun Gupta

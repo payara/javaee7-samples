@@ -1,7 +1,7 @@
 package org.javaee7.interceptor.aroundconstruct;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
+import jakarta.annotation.PostConstruct;
+import jakarta.inject.Inject;
 
 /**
  * @author Radim Hanus

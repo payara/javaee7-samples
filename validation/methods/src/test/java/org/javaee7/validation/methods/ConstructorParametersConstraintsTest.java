@@ -11,10 +11,10 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import javax.inject.Inject;
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
-import javax.validation.executable.ExecutableValidator;
+import jakarta.inject.Inject;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validator;
+import jakarta.validation.executable.ExecutableValidator;
 import java.lang.reflect.Constructor;
 import java.util.Set;
 
@@ -53,7 +53,7 @@ public class ConstructorParametersConstraintsTest {
 
         ConstraintViolation<MyBean2> violation = constraints.iterator().next();
         assertThat(constraints.size(), equalTo(1));
-        assertThat(violation.getMessageTemplate(), equalTo("{javax.validation.constraints.NotNull.message}"));
+        assertThat(violation.getMessageTemplate(), equalTo("{jakarta.validation.constraints.NotNull.message}"));
         assertThat(violation.getPropertyPath().toString(), equalTo("MyBean2.arg0.value"));
     }
 

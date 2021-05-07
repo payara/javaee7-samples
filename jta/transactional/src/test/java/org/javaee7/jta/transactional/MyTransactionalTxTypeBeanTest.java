@@ -9,8 +9,8 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.inject.Inject;
-import javax.transaction.TransactionalException;
+import jakarta.inject.Inject;
+import jakarta.transaction.TransactionalException;
 
 /**
  * @author Alexis Hassler

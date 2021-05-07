@@ -39,8 +39,8 @@
  */
 package org.javaee7.batch.chunk.exception;
 
-import javax.batch.api.chunk.AbstractItemReader;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.AbstractItemReader;
+import jakarta.inject.Named;
 import java.io.Serializable;
 import java.util.StringTokenizer;
 

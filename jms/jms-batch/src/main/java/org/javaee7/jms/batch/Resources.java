@@ -1,7 +1,7 @@
 package org.javaee7.jms.batch;
 
-import javax.jms.JMSConnectionFactoryDefinition;
-import javax.jms.JMSDestinationDefinition;
+import jakarta.jms.JMSConnectionFactoryDefinition;
+import jakarta.jms.JMSDestinationDefinition;
 
 /**
  * @author Patrik Dudits
@@ -9,7 +9,7 @@ import javax.jms.JMSDestinationDefinition;
 @JMSDestinationDefinition(
     name = Resources.TOPIC,
     resourceAdapter = "jmsra",
-    interfaceName = "javax.jms.Topic",
+    interfaceName = "jakarta.jms.Topic",
     destinationName = "batch.topic",
     description = "Batch processing topic")
 @JMSConnectionFactoryDefinition( // <1> WildFly appears to require user and password to be set for connection factories

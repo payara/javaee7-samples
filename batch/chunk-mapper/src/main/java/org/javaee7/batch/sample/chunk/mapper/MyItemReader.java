@@ -42,11 +42,11 @@ package org.javaee7.batch.sample.chunk.mapper;
 import java.io.Serializable;
 import java.util.StringTokenizer;
 import java.util.concurrent.atomic.AtomicInteger;
-import javax.batch.api.BatchProperty;
-import javax.batch.api.chunk.AbstractItemReader;
-import javax.batch.runtime.context.JobContext;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.batch.api.BatchProperty;
+import jakarta.batch.api.chunk.AbstractItemReader;
+import jakarta.batch.runtime.context.JobContext;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

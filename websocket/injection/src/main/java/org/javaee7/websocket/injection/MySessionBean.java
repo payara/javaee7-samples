@@ -39,7 +39,7 @@
  */
 package org.javaee7.websocket.injection;
 
-import javax.ejb.Stateless;
+import jakarta.ejb.Stateless;
 
 /**
  * @author Arun Gupta

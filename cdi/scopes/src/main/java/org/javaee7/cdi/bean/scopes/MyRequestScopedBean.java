@@ -39,7 +39,7 @@
  */
 package org.javaee7.cdi.bean.scopes;
 
-import javax.enterprise.context.RequestScoped;
+import jakarta.enterprise.context.RequestScoped;
 
 /**
  * @author Arun Gupta

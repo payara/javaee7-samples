@@ -1,8 +1,8 @@
 package org.javaee7.cdi.events.conditional;
 
-import javax.enterprise.context.SessionScoped;
-import javax.enterprise.event.Observes;
-import javax.enterprise.event.Reception;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.enterprise.event.Observes;
+import jakarta.enterprise.event.Reception;
 import java.io.Serializable;
 
 /**

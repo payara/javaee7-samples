@@ -1,10 +1,10 @@
 package org.javaee7.ejb.timer;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
-import javax.ejb.*;
-import javax.enterprise.event.Event;
-import javax.inject.Inject;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
+import jakarta.ejb.*;
+import jakarta.enterprise.event.Event;
+import jakarta.inject.Inject;
 
 /**
  * author: Jacek Jackowiak

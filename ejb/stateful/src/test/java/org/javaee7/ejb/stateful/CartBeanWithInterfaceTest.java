@@ -9,7 +9,7 @@ import static org.jboss.shrinkwrap.api.asset.EmptyAsset.INSTANCE;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.ejb.EJB;
+import jakarta.ejb.EJB;
 
 import org.javaee7.ejb.stateful.remote.Cart;
 import org.javaee7.ejb.stateful.remote.CartBeanWithInterface;

@@ -1,7 +1,7 @@
 package org.javaee7.cdi.events;
 
-import javax.enterprise.context.SessionScoped;
-import javax.enterprise.event.Observes;
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.enterprise.event.Observes;
 import java.io.Serializable;
 
 /**

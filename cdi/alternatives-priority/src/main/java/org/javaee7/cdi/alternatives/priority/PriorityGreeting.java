@@ -1,7 +1,7 @@
 package org.javaee7.cdi.alternatives.priority;
 
-import javax.annotation.Priority;
-import javax.enterprise.inject.Alternative;
+import jakarta.annotation.Priority;
+import jakarta.enterprise.inject.Alternative;
 
 /**
  * @author Radim Hanus

@@ -39,10 +39,10 @@
  */
 package org.javaee7.jaxrs.readerwriter.injection;
 
-import javax.enterprise.context.RequestScoped;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
 
 /**
  * @author Arun Gupta

@@ -1,9 +1,9 @@
 /** Copyright Payara Services Limited **/
 package org.javaee7.jaxrpc.security;
 
-import static javax.xml.rpc.Stub.ENDPOINT_ADDRESS_PROPERTY;
-import static javax.xml.rpc.Stub.PASSWORD_PROPERTY;
-import static javax.xml.rpc.Stub.USERNAME_PROPERTY;
+import static jakarta.xml.rpc.Stub.ENDPOINT_ADDRESS_PROPERTY;
+import static jakarta.xml.rpc.Stub.PASSWORD_PROPERTY;
+import static jakarta.xml.rpc.Stub.USERNAME_PROPERTY;
 import static org.javaee7.ServerOperations.addUsersToContainerIdentityStore;
 import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
 import static org.junit.Assert.assertEquals;
@@ -13,8 +13,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.RemoteException;
 
-import javax.xml.rpc.ServiceException;
-import javax.xml.rpc.Stub;
+import jakarta.xml.rpc.ServiceException;
+import jakarta.xml.rpc.Stub;
 
 import org.javaee7.jaxrpc.security.HelloService;
 import org.javaee7.jaxrpc.security.HelloServiceImpl;

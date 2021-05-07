@@ -39,8 +39,8 @@
  */
 package org.javaee7.jta.transaction.scope;
 
-import javax.inject.Inject;
-import javax.transaction.Transactional;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 
 /**
  * @author Arun Gupta

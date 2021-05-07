@@ -43,10 +43,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import javax.enterprise.context.RequestScoped;
-import javax.validation.constraints.Future;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 /**
  * @author Arun Gupta

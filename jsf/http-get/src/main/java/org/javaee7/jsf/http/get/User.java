@@ -39,10 +39,10 @@
  */
 package org.javaee7.jsf.http.get;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.faces.event.AbortProcessingException;
-import javax.faces.event.ComponentSystemEvent;
-import javax.inject.Named;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.faces.event.AbortProcessingException;
+import jakarta.faces.event.ComponentSystemEvent;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

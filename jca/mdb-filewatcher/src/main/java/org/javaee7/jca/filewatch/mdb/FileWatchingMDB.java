@@ -22,10 +22,10 @@ import static org.javaee7.jca.filewatch.event.FileEvent.Type.DELETED;
 
 import java.io.File;
 
-import javax.ejb.ActivationConfigProperty;
-import javax.ejb.MessageDriven;
-import javax.enterprise.event.Event;
-import javax.inject.Inject;
+import jakarta.ejb.ActivationConfigProperty;
+import jakarta.ejb.MessageDriven;
+import jakarta.enterprise.event.Event;
+import jakarta.inject.Inject;
 
 import org.javaee7.jca.filewatch.adapter.FileSystemWatcher;
 import org.javaee7.jca.filewatch.event.Created;

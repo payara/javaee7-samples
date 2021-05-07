@@ -7,9 +7,9 @@ import static org.junit.Assert.assertNotNull;
 
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import javax.naming.InitialContext;
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

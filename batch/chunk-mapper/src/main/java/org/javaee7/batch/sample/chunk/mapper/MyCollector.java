@@ -40,7 +40,7 @@
 package org.javaee7.batch.sample.chunk.mapper;
 
 import java.io.Serializable;
-import javax.batch.api.partition.PartitionCollector;
+import jakarta.batch.api.partition.PartitionCollector;
 
 /**
  * @author Arun Gupta

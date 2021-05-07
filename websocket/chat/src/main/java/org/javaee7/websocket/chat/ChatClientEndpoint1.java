@@ -3,10 +3,10 @@ package org.javaee7.websocket.chat;
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
-import javax.websocket.ClientEndpoint;
-import javax.websocket.OnMessage;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
+import jakarta.websocket.ClientEndpoint;
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.OnOpen;
+import jakarta.websocket.Session;
 
 /**
  * @author Arun Gupta

@@ -39,9 +39,9 @@
  */
 package org.javaee7.websocket.parameters;
 
-import javax.websocket.OnMessage;
-import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.server.PathParam;
+import jakarta.websocket.server.ServerEndpoint;
 
 /**
  * @author Arun Gupta

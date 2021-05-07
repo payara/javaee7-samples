@@ -39,9 +39,9 @@
  */
 package org.javaee7.websocket.encoder.client;
 
-import javax.websocket.EncodeException;
-import javax.websocket.Encoder;
-import javax.websocket.EndpointConfig;
+import jakarta.websocket.EncodeException;
+import jakarta.websocket.Encoder;
+import jakarta.websocket.EndpointConfig;
 
 /**
  * @author Arun Gupta

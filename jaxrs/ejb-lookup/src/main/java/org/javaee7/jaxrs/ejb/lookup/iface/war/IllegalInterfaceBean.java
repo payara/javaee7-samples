@@ -3,19 +3,19 @@ package org.javaee7.jaxrs.ejb.lookup.iface.war;
 
 import java.rmi.RemoteException;
 
-import javax.ejb.EJBMetaData;
-import javax.ejb.Handle;
-import javax.ejb.HomeHandle;
-import javax.ejb.RemoveException;
-import javax.ejb.Stateless;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import jakarta.ejb.EJBMetaData;
+import jakarta.ejb.Handle;
+import jakarta.ejb.HomeHandle;
+import jakarta.ejb.RemoveException;
+import jakarta.ejb.Stateless;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 
 /**
- * javax.ejb.* classes are not allowed as business interfaces, but the bean still can be mapped.
+ * jakarta.ejb.* classes are not allowed as business interfaces, but the bean still can be mapped.
  *
  * @author David Matejcek
  */
@@ -23,7 +23,7 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.TEXT_PLAIN)
 @Stateless
 @Path("illegal-interface")
-public class IllegalInterfaceBean implements javax.ejb.EJBHome {
+public class IllegalInterfaceBean implements jakarta.ejb.EJBHome {
 
     @Override
     public void remove(Handle handle) throws RemoteException, RemoveException {

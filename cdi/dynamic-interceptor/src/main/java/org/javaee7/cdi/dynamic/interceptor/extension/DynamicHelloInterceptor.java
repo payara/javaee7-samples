@@ -1,14 +1,14 @@
 package org.javaee7.cdi.dynamic.interceptor.extension;
 
 import static java.util.Collections.singleton;
-import static javax.enterprise.inject.spi.InterceptionType.AROUND_INVOKE;
+import static jakarta.enterprise.inject.spi.InterceptionType.AROUND_INVOKE;
 
 import java.lang.annotation.Annotation;
 import java.util.Set;
 
-import javax.enterprise.inject.spi.InterceptionType;
-import javax.enterprise.util.AnnotationLiteral;
-import javax.interceptor.InvocationContext;
+import jakarta.enterprise.inject.spi.InterceptionType;
+import jakarta.enterprise.util.AnnotationLiteral;
+import jakarta.interceptor.InvocationContext;
 
 public class DynamicHelloInterceptor extends DynamicInterceptorBase<HelloInterceptorEnabler> {
 

@@ -40,9 +40,9 @@
 // Portions Copyright [2018] [Payara Foundation and/or its affiliates]
 package org.javaee7.jacc.contexts.bean;
 
-import javax.annotation.PostConstruct;
-import javax.ejb.EJB;
-import javax.ejb.Singleton;
+import jakarta.annotation.PostConstruct;
+import jakarta.ejb.EJB;
+import jakarta.ejb.Singleton;
 
 @Singleton
 public class BeanLeaf {

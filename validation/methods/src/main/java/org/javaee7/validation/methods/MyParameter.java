@@ -1,6 +1,6 @@
 package org.javaee7.validation.methods;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 public class MyParameter {
 

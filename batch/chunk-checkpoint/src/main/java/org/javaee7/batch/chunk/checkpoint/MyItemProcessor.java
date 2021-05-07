@@ -39,8 +39,8 @@
  */
 package org.javaee7.batch.chunk.checkpoint;
 
-import javax.batch.api.chunk.ItemProcessor;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.ItemProcessor;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

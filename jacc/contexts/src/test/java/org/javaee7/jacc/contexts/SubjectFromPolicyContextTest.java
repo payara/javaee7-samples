@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import java.io.IOException;
 
 import javax.security.auth.Subject;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.javaee7.jacc.contexts.sam.TestServerAuthModule;
 import org.javaee7.jaspic.common.ArquillianBase;

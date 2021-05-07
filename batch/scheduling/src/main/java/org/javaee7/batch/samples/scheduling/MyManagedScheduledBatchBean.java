@@ -2,19 +2,19 @@ package org.javaee7.batch.samples.scheduling;
 
 import static java.util.Calendar.SECOND;
 import static java.util.concurrent.TimeUnit.MINUTES;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import javax.annotation.Resource;
-import javax.batch.runtime.BatchRuntime;
-import javax.ejb.Local;
-import javax.ejb.Stateless;
-import javax.enterprise.concurrent.LastExecution;
-import javax.enterprise.concurrent.ManagedScheduledExecutorService;
-import javax.enterprise.concurrent.Trigger;
+import jakarta.annotation.Resource;
+import jakarta.batch.runtime.BatchRuntime;
+import jakarta.ejb.Local;
+import jakarta.ejb.Stateless;
+import jakarta.enterprise.concurrent.LastExecution;
+import jakarta.enterprise.concurrent.ManagedScheduledExecutorService;
+import jakarta.enterprise.concurrent.Trigger;
 
 /**
  * @author arungupta

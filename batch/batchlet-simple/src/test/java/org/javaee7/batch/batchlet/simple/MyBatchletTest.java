@@ -1,7 +1,7 @@
 package org.javaee7.batch.batchlet.simple;
 
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 import static org.jboss.shrinkwrap.api.ArchivePaths.create;
 import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
 import static org.jboss.shrinkwrap.api.asset.EmptyAsset.INSTANCE;
@@ -9,8 +9,8 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -23,12 +23,12 @@ import org.junit.runner.RunWith;
  * Batchlet is the simplest processing style available in the Batch specification. It's a task oriented step where the
  * task is invoked once, executes, and returns an exit status.
  *
- * A Batchlet need to implement +javax.batch.api.Batchlet+ interface or in alternative extend
- * +javax.batch.api.AbstractBatchlet+ that already provides empty implementations for all methods.
+ * A Batchlet need to implement +jakarta.batch.api.Batchlet+ interface or in alternative extend
+ * +jakarta.batch.api.AbstractBatchlet+ that already provides empty implementations for all methods.
  *
  * include::MyBatchlet[]
  *
- * We are mostly interested in overriding +javax.batch.api.AbstractBatchlet#process+ to provide the behaviour that we
+ * We are mostly interested in overriding +jakarta.batch.api.AbstractBatchlet#process+ to provide the behaviour that we
  * want to achieve with the Batchlet itself. Common cases include: copy files to process with a chunk oriented step,
  * startup and cleanup, or validations to your processing workflow.
  *
@@ -72,8 +72,8 @@ public class MyBatchletTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we just need to check the Batch Status in the +javax.batch.runtime.JobExecution+ object. We
-     * should get a +javax.batch.runtime.BatchStatus.COMPLETED+.
+     * expected behaviour we just need to check the Batch Status in the +jakarta.batch.runtime.JobExecution+ object. We
+     * should get a +jakarta.batch.runtime.BatchStatus.COMPLETED+.
      *
      * @throws Exception an exception if the batch could not complete successfully.
      */

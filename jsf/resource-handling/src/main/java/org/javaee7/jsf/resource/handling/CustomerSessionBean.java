@@ -41,8 +41,8 @@ package org.javaee7.jsf.resource.handling;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.ejb.Stateless;
-import javax.inject.Named;
+import jakarta.ejb.Stateless;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

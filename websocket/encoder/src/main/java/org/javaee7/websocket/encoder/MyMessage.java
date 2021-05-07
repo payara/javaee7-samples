@@ -39,7 +39,7 @@
  */
 package org.javaee7.websocket.encoder;
 
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 /**
  * @author Arun Gupta

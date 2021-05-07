@@ -39,9 +39,9 @@
  */
 package org.javaee7.validation.methods;
 
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Inject;
-import javax.validation.Valid;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Inject;
+import jakarta.validation.Valid;
 
 /**
  * @author Arun Gupta

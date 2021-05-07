@@ -1,8 +1,8 @@
 package org.javaee7.interceptor.aroundconstruct;
 
-import javax.interceptor.AroundConstruct;
-import javax.interceptor.Interceptor;
-import javax.interceptor.InvocationContext;
+import jakarta.interceptor.AroundConstruct;
+import jakarta.interceptor.Interceptor;
+import jakarta.interceptor.InvocationContext;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 

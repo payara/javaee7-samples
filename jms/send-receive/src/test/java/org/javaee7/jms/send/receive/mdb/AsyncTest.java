@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.io.File;
 
-import javax.ejb.EJB;
+import jakarta.ejb.EJB;
 
 import org.javaee7.jms.send.receive.Resources;
 import org.jboss.arquillian.container.test.api.Deployment;

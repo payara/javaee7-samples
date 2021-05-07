@@ -41,11 +41,11 @@ package org.javaee7.websocket.messagesize;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import javax.websocket.CloseReason;
-import javax.websocket.OnClose;
-import javax.websocket.OnError;
-import javax.websocket.OnMessage;
-import javax.websocket.server.ServerEndpoint;
+import jakarta.websocket.CloseReason;
+import jakarta.websocket.OnClose;
+import jakarta.websocket.OnError;
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.server.ServerEndpoint;
 
 /**
  * @author Arun Gupta

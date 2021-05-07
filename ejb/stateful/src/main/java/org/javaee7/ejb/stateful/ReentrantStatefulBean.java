@@ -1,8 +1,8 @@
 package org.javaee7.ejb.stateful;
 
-import javax.annotation.Resource;
-import javax.ejb.SessionContext;
-import javax.ejb.Stateful;
+import jakarta.annotation.Resource;
+import jakarta.ejb.SessionContext;
+import jakarta.ejb.Stateful;
 
 /**
  * 

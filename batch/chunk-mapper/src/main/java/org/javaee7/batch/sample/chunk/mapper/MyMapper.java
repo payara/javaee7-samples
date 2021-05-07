@@ -40,10 +40,10 @@
 package org.javaee7.batch.sample.chunk.mapper;
 
 import java.util.Properties;
-import javax.batch.api.partition.PartitionMapper;
-import javax.batch.api.partition.PartitionPlan;
-import javax.batch.api.partition.PartitionPlanImpl;
-import javax.inject.Named;
+import jakarta.batch.api.partition.PartitionMapper;
+import jakarta.batch.api.partition.PartitionPlan;
+import jakarta.batch.api.partition.PartitionPlanImpl;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

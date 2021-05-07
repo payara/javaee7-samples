@@ -40,8 +40,8 @@
 package org.javaee7.batch.sample.chunk.mapper;
 
 import java.io.Serializable;
-import javax.batch.api.partition.PartitionAnalyzer;
-import javax.batch.runtime.BatchStatus;
+import jakarta.batch.api.partition.PartitionAnalyzer;
+import jakarta.batch.runtime.BatchStatus;
 
 /**
  * @author Arun Gupta

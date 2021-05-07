@@ -40,10 +40,10 @@
 package org.javaee7.batch.chunk.csv.database;
 
 import java.util.List;
-import javax.batch.api.chunk.AbstractItemWriter;
-import javax.inject.Named;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.batch.api.chunk.AbstractItemWriter;
+import jakarta.inject.Named;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 /**
  * @author Arun Gupta

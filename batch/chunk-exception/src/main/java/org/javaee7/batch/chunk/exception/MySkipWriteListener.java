@@ -39,8 +39,8 @@
  */
 package org.javaee7.batch.chunk.exception;
 
-import javax.batch.api.chunk.listener.SkipWriteListener;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.listener.SkipWriteListener;
+import jakarta.inject.Named;
 import java.util.List;
 
 /**

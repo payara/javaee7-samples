@@ -1,8 +1,8 @@
 package org.javaee7.jaspic.common;
 
-import javax.security.auth.message.config.AuthConfigFactory;
-import javax.security.auth.message.module.ServerAuthModule;
-import javax.servlet.ServletContext;
+import jakarta.security.auth.message.config.AuthConfigFactory;
+import jakarta.security.auth.message.module.ServerAuthModule;
+import jakarta.servlet.ServletContext;
 
 /**
  * 

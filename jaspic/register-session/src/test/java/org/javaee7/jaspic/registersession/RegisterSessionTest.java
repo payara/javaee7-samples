@@ -61,7 +61,7 @@ public class RegisterSessionTest extends ArquillianBase {
         // Logged-in thus should be accessible.
         assertTrue(
             "Could not access protected page, but should be able to. " + 
-            "Did the container not remember the authenticated identity via 'javax.servlet.http.registerSession'?",
+            "Did the container not remember the authenticated identity via 'jakarta.servlet.http.registerSession'?",
             response.contains("This is a protected servlet")
         );
 
@@ -120,7 +120,7 @@ public class RegisterSessionTest extends ArquillianBase {
         // Logged-in thus should be accessible.
         assertTrue(
             "Could not access protected page, but should be able to. " + 
-            "Did the container not remember the authenticated identity via 'javax.servlet.http.registerSession'?",
+            "Did the container not remember the authenticated identity via 'jakarta.servlet.http.registerSession'?",
             response.contains("This is a protected servlet")
         );
 

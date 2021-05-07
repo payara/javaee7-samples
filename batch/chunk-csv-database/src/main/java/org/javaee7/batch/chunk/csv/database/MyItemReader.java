@@ -45,8 +45,8 @@ import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.batch.api.chunk.AbstractItemReader;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.AbstractItemReader;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

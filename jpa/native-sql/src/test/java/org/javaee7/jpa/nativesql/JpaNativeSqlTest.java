@@ -7,7 +7,7 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -43,7 +43,7 @@ public class JpaNativeSqlTest {
      *
      * The +persistence.xml+ file is needed of course for the persistence unit definition. A datasource is not
      * needed, since we can now use the new default datasource available in +JEE7+. We're also using the new
-     * +javax.persistence.schema-generation.*+ propertires to create, populate and drop the database.
+     * +jakarta.persistence.schema-generation.*+ propertires to create, populate and drop the database.
      */
     @Deployment
     public static WebArchive createDeployment() {
