@@ -40,7 +40,7 @@
 // Portions Copyright [2018] [Payara Foundation and/or its affiliates]
 package org.javaee7.jacc.contexts.bean;
 
-import javax.ejb.Singleton;
+import jakarta.ejb.Singleton;
 
 @Singleton
 public class BeanMessage implements BeanMessageInterface {

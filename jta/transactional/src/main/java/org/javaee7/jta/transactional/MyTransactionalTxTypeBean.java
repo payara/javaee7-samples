@@ -39,8 +39,8 @@
  */
 package org.javaee7.jta.transactional;
 
-import javax.enterprise.context.RequestScoped;
-import javax.transaction.Transactional;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.transaction.Transactional;
 
 /**
  * @author Arun Gupta

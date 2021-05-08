@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 import java.util.AbstractMap;
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.javaee7.Parameter;
 import org.javaee7.ParameterRule;

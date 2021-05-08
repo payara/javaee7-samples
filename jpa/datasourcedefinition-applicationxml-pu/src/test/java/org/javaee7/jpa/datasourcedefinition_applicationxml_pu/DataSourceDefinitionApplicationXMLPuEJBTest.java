@@ -7,7 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
-import javax.enterprise.inject.spi.CDI;
+import jakarta.enterprise.inject.spi.CDI;
 
 import org.javaee7.jpa.datasourcedefinition_applicationxml_pu.entity.TestEntity;
 import org.javaee7.jpa.datasourcedefinition_applicationxml_pu.service.TestService;

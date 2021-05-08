@@ -39,7 +39,7 @@
  */
 package org.javaee7.websocket.endpoint.singleton;
 
-import javax.websocket.server.ServerEndpointConfig;
+import jakarta.websocket.server.ServerEndpointConfig;
 
 /**
  * @author Arun Gupta

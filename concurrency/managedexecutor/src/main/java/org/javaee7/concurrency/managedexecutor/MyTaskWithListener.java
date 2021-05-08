@@ -41,9 +41,9 @@ package org.javaee7.concurrency.managedexecutor;
 
 import java.util.Map;
 import java.util.concurrent.Future;
-import javax.enterprise.concurrent.ManagedExecutorService;
-import javax.enterprise.concurrent.ManagedTask;
-import javax.enterprise.concurrent.ManagedTaskListener;
+import jakarta.enterprise.concurrent.ManagedExecutorService;
+import jakarta.enterprise.concurrent.ManagedTask;
+import jakarta.enterprise.concurrent.ManagedTaskListener;
 
 /**
  * @author Arun Gupta

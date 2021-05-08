@@ -2,9 +2,9 @@ package org.javaee7.jaspic.wrapping.sam;
 
 import static java.util.EnumSet.allOf;
 
-import javax.servlet.DispatcherType;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.annotation.WebListener;
+import jakarta.servlet.DispatcherType;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.annotation.WebListener;
 
 import org.javaee7.jaspic.common.BaseServletContextListener;
 import org.javaee7.jaspic.common.JaspicUtils;

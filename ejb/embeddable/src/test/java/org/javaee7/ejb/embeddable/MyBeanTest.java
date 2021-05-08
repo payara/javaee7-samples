@@ -39,7 +39,7 @@
  */
 package org.javaee7.ejb.embeddable;
 
-import javax.ejb.embeddable.EJBContainer;
+import jakarta.ejb.embeddable.EJBContainer;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -57,7 +57,7 @@ public class MyBeanTest {
     public void testSayHello() throws Exception {
         System.out.println("sayHello");
         String name = "Duke";
-        try (EJBContainer container = javax.ejb.embeddable.EJBContainer.createEJBContainer()) {
+        try (EJBContainer container = jakarta.ejb.embeddable.EJBContainer.createEJBContainer()) {
             MyBean instance = (MyBean) container.getContext().lookup("java:global/classes/MyBean");
             String expResult = "Hello " + name;
             String result = instance.sayHello(name);

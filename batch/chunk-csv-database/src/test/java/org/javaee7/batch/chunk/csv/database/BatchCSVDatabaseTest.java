@@ -1,6 +1,6 @@
 package org.javaee7.batch.chunk.csv.database;
 
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
 import static org.javaee7.util.BatchTestHelper.keepTestAlive;
 import static org.junit.Assert.assertEquals;
 
@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.BatchStatus;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
-import javax.batch.runtime.StepExecution;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.BatchStatus;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
+import jakarta.batch.runtime.StepExecution;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.Query;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -29,8 +29,8 @@ import org.junit.runner.RunWith;
 
 /**
  * The Batch specification provides a Chunk Oriented processing style. This style is defined by enclosing into a
- * transaction a set of reads, process and write operations via +javax.batch.api.chunk.ItemReader+,
- * +javax.batch.api.chunk.ItemProcessor+ and +javax.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
+ * transaction a set of reads, process and write operations via +jakarta.batch.api.chunk.ItemReader+,
+ * +jakarta.batch.api.chunk.ItemProcessor+ and +jakarta.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
  * and aggregated. The transaction is then committed when the defined +checkpoint-policy+ is triggered.
  *
  * include::myJob.xml[]
@@ -90,7 +90,7 @@ public class BatchCSVDatabaseTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query the +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query the +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * The batch process itself will read and write 7 elements of type +Person+. Commits are executed after 3 elements
      * are read.

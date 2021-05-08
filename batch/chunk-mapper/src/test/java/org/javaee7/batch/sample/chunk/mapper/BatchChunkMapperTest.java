@@ -3,12 +3,12 @@ package org.javaee7.batch.sample.chunk.mapper;
 import static com.jayway.awaitility.Awaitility.await;
 import static com.jayway.awaitility.Duration.FIVE_HUNDRED_MILLISECONDS;
 import static com.jayway.awaitility.Duration.ONE_MINUTE;
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
-import static javax.batch.runtime.BatchStatus.STARTED;
-import static javax.batch.runtime.Metric.MetricType.COMMIT_COUNT;
-import static javax.batch.runtime.Metric.MetricType.READ_COUNT;
-import static javax.batch.runtime.Metric.MetricType.WRITE_COUNT;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchStatus.STARTED;
+import static jakarta.batch.runtime.Metric.MetricType.COMMIT_COUNT;
+import static jakarta.batch.runtime.Metric.MetricType.READ_COUNT;
+import static jakarta.batch.runtime.Metric.MetricType.WRITE_COUNT;
 import static org.javaee7.Libraries.awaitability;
 import static org.javaee7.batch.sample.chunk.mapper.MyItemReader.totalReaders;
 import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
@@ -20,10 +20,10 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Callable;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -35,8 +35,8 @@ import org.junit.runner.RunWith;
 
 /**
  * The Batch specification provides a Chunk Oriented processing style. This style is defined by enclosing into a
- * transaction a set of reads, process and write operations via +javax.batch.api.chunk.ItemReader+,
- * +javax.batch.api.chunk.ItemProcessor+ and +javax.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
+ * transaction a set of reads, process and write operations via +jakarta.batch.api.chunk.ItemReader+,
+ * +jakarta.batch.api.chunk.ItemProcessor+ and +jakarta.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
  * and aggregated. The transaction is then committed when the defined +checkpoint-policy+ is triggered.
  *
  * Many batch processing problems can be solved with single threaded, single process jobs, but the Batch specification
@@ -45,7 +45,7 @@ import org.junit.runner.RunWith;
  * performance by splitting the work to be done.
  *
  * You can define the number of partitions and the number of threads using a custom mapper. The custom mapper needs to
- * implement +javax.batch.api.partition.PartitionMapper+ and create a new +javax.batch.api.partition.PartitionPlan+ to
+ * implement +jakarta.batch.api.partition.PartitionMapper+ and create a new +jakarta.batch.api.partition.PartitionPlan+ to
  * define the partitions behaviour. Each partition is required to receive a set of unique parameters that instruct it
  * into which data it should operate.
  *
@@ -95,7 +95,7 @@ public class BatchChunkMapperTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query the +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query the +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * The batch process itself will read and process 20 elements from numbers 1 to 20, but only write the odd
      * elements. Elements from 1 to 10 will be processed in one partition and elements from 11 to 20 in another

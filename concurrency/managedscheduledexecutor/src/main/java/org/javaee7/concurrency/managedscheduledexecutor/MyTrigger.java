@@ -39,8 +39,8 @@
  */
 package org.javaee7.concurrency.managedscheduledexecutor;
 
-import javax.enterprise.concurrent.LastExecution;
-import javax.enterprise.concurrent.Trigger;
+import jakarta.enterprise.concurrent.LastExecution;
+import jakarta.enterprise.concurrent.Trigger;
 import java.util.Date;
 
 /**

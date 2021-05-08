@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import javax.inject.Inject;
-import javax.validation.ConstraintViolationException;
+import jakarta.inject.Inject;
+import jakarta.validation.ConstraintViolationException;
 
 /**
  * @author Jakub Marchwicki
@@ -36,7 +36,7 @@ public class ConstructorParametersInjectionTest {
     @Test
     public void constructorViolationsWhenNullParameters() {
         thrown.expect(ConstraintViolationException.class);
-        thrown.expectMessage("javax.validation.constraints.NotNull");
+        thrown.expectMessage("jakarta.validation.constraints.NotNull");
         thrown.expectMessage("MyBean2.arg0.value");
         bean.getValue();
     }

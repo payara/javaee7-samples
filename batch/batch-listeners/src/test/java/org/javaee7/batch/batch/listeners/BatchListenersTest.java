@@ -1,8 +1,8 @@
 package org.javaee7.batch.batch.listeners;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -31,12 +31,12 @@ import org.junit.runner.RunWith;
  *
  * Events can be caught via extending the following classes, for the appropriate batch lifecycle event:
  *
- * * +javax.batch.api.listener.AbstractJobListener+
- * * +javax.batch.api.listener.AbstractStepListener+
- * * +javax.batch.api.chunk.listener.AbstractChunkListener+
- * * +javax.batch.api.chunk.listener.AbstractItemReadListener+
- * * +javax.batch.api.chunk.listener.AbstractItemProcessListener+
- * * +javax.batch.api.chunk.listener.AbstractItemWriteListener+
+ * * +jakarta.batch.api.listener.AbstractJobListener+
+ * * +jakarta.batch.api.listener.AbstractStepListener+
+ * * +jakarta.batch.api.chunk.listener.AbstractChunkListener+
+ * * +jakarta.batch.api.chunk.listener.AbstractItemReadListener+
+ * * +jakarta.batch.api.chunk.listener.AbstractItemProcessListener+
+ * * +jakarta.batch.api.chunk.listener.AbstractItemWriteListener+
  *
  * The Job Listener:
  * include::MyJobListener[]
@@ -108,7 +108,7 @@ public class BatchListenersTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query the +javax.batch.runtime.Metric+ object available in the step execution and
+     * expected behaviour we need to query the +jakarta.batch.runtime.Metric+ object available in the step execution and
      * also verify if the listeners were executed correctly via a +CountDownLatch+ wait.
      *
      * The batch process itself will read and process 10 elements from numbers  1 to 10, but only write the odd

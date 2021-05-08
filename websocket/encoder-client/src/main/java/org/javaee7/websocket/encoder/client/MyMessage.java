@@ -40,8 +40,8 @@
 package org.javaee7.websocket.encoder.client;
 
 import java.io.StringReader;
-import javax.json.Json;
-import javax.json.JsonObject;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
 
 /**
  * @author Arun Gupta

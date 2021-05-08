@@ -40,7 +40,7 @@
 
 package org.javaee7.jpa.embeddable.twice;
 
-import javax.persistence.Embeddable;
+import jakarta.persistence.Embeddable;
 import java.io.Serializable;
 import java.math.BigDecimal;
 

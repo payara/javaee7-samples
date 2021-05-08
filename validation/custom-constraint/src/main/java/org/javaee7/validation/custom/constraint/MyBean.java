@@ -39,7 +39,7 @@
  */
 package org.javaee7.validation.custom.constraint;
 
-import javax.enterprise.context.RequestScoped;
+import jakarta.enterprise.context.RequestScoped;
 
 /**
  * @author Arun Gupta

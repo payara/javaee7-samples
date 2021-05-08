@@ -45,13 +45,13 @@
     </modules>
 
     <profiles>
-        <!-- Extra modules to run for Payara 5 versions -->
+        <!-- Extra modules to run for Payara 6 versions -->
         <profile>
-            <id>payara5</id>
+            <id>payara6</id>
             <activation>
                 <property>
                     <name>payara.version</name>
-                    <value>/5\.*/</value>
+                    <value>/6\.*/</value>
                 </property>
             </activation>
             <modules>

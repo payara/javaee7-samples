@@ -39,7 +39,7 @@
  */
 package org.javaee7.cdi.vetoed;
 
-import javax.enterprise.inject.Vetoed;
+import jakarta.enterprise.inject.Vetoed;
 
 /**
  * @author Arun Gupta

@@ -39,10 +39,10 @@
  */
 package org.javaee7.batch.sample.chunk.partition;
 
-import javax.batch.api.chunk.ItemProcessor;
-import javax.batch.runtime.context.JobContext;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.ItemProcessor;
+import jakarta.batch.runtime.context.JobContext;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

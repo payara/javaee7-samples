@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <glassfish.client.version>5.0</glassfish.client.version>
+        <glassfish.client.version>6.0.0</glassfish.client.version>
         <java.min.version>1.7</java.min.version>
     </properties>
 

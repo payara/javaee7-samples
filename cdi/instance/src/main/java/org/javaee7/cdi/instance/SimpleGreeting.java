@@ -1,6 +1,6 @@
 package org.javaee7.cdi.instance;
 
-import javax.enterprise.context.RequestScoped;
+import jakarta.enterprise.context.RequestScoped;
 
 /**
  * @author Arun Gupta

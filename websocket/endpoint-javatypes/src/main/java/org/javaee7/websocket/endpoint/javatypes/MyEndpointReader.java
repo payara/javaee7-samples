@@ -44,8 +44,8 @@ import java.io.Reader;
 import java.nio.CharBuffer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.websocket.OnMessage;
-import javax.websocket.server.ServerEndpoint;
+import jakarta.websocket.OnMessage;
+import jakarta.websocket.server.ServerEndpoint;
 
 /**
  * @author Arun Gupta

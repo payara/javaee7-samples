@@ -40,7 +40,7 @@
 package org.javaee7.cdi.bean.scopes;
 
 import java.io.Serializable;
-import javax.enterprise.context.SessionScoped;
+import jakarta.enterprise.context.SessionScoped;
 
 /**
  * @author Arun Gupta

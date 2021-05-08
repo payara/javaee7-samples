@@ -2,8 +2,8 @@ package org.javaee7.jaxws.endpoint;
 
 import java.util.List;
 
-import javax.jws.WebMethod;
-import javax.jws.WebService;
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
 
 /**
  *

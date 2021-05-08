@@ -7,8 +7,8 @@ import static org.junit.runners.MethodSorters.NAME_ASCENDING;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
+import javax.xml.namespace .QName;
+import jakarta.xml.ws.Service;
 
 import org.javaee7.jaxws.endpoint.ejb.EBookStore;
 import org.jboss.arquillian.container.test.api.Deployment;

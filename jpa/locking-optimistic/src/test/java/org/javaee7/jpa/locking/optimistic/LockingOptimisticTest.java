@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import javax.annotation.Resource;
-import javax.enterprise.concurrent.ManagedExecutorService;
-import javax.inject.Inject;
+import jakarta.annotation.Resource;
+import jakarta.enterprise.concurrent.ManagedExecutorService;
+import jakarta.inject.Inject;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -101,7 +101,7 @@ public class LockingOptimisticTest {
             public void run() {
                 try {
                     movieBean.readMovie(3);
-                } catch (RuntimeException e) { // Should throw an javax.persistence.OptimisticLockException? Hibernate is throwing org.hibernate.OptimisticLockException. Investigate!
+                } catch (RuntimeException e) { // Should throw an jakarta.persistence.OptimisticLockException? Hibernate is throwing org.hibernate.OptimisticLockException. Investigate!
                     testCountDownLatch.countDown();
                 }
             }
@@ -141,7 +141,7 @@ public class LockingOptimisticTest {
                 try {
                     testCountDownLatch1.countDown();
                     movieBean.updateMovie2(3, "INCEPTION");
-                } catch (RuntimeException e) { // Should throw an javax.persistence.OptimisticLockException? The Exception is wrapped around an javax.ejb.EJBException
+                } catch (RuntimeException e) { // Should throw an jakarta.persistence.OptimisticLockException? The Exception is wrapped around an jakarta.ejb.EJBException
                     testCountDownLatch2.countDown();
                 }
             }

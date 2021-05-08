@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import javax.batch.runtime.BatchRuntime;
-import javax.ejb.Schedule;
+import jakarta.batch.runtime.BatchRuntime;
+import jakarta.ejb.Schedule;
 
 /**
  * @author Roberto Cortez

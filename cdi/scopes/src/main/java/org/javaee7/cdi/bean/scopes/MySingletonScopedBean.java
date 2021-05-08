@@ -39,7 +39,7 @@
  */
 package org.javaee7.cdi.bean.scopes;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 /**
  * @author Arun Gupta

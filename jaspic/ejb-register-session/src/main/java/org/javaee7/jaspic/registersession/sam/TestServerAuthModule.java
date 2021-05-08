@@ -1,7 +1,7 @@
 package org.javaee7.jaspic.registersession.sam;
 
 import static java.lang.Boolean.TRUE;
-import static javax.security.auth.message.AuthStatus.SUCCESS;
+import static jakarta.security.auth.message.AuthStatus.SUCCESS;
 
 import java.io.IOException;
 import java.security.Principal;
@@ -11,15 +11,15 @@ import javax.security.auth.Subject;
 import javax.security.auth.callback.Callback;
 import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
-import javax.security.auth.message.AuthException;
-import javax.security.auth.message.AuthStatus;
-import javax.security.auth.message.MessageInfo;
-import javax.security.auth.message.MessagePolicy;
-import javax.security.auth.message.callback.CallerPrincipalCallback;
-import javax.security.auth.message.callback.GroupPrincipalCallback;
-import javax.security.auth.message.module.ServerAuthModule;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.security.auth.message.AuthException;
+import jakarta.security.auth.message.AuthStatus;
+import jakarta.security.auth.message.MessageInfo;
+import jakarta.security.auth.message.MessagePolicy;
+import jakarta.security.auth.message.callback.CallerPrincipalCallback;
+import jakarta.security.auth.message.callback.GroupPrincipalCallback;
+import jakarta.security.auth.message.module.ServerAuthModule;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 
 /**
@@ -76,7 +76,7 @@ public class TestServerAuthModule implements ServerAuthModule {
                 new GroupPrincipalCallback(clientSubject, new String[] { "architect" }) };
 
             // Tell container to register an authentication session.
-            messageInfo.getMap().put("javax.servlet.http.registerSession", TRUE.toString());
+            messageInfo.getMap().put("jakarta.servlet.http.registerSession", TRUE.toString());
         } else {
 
             // ### If no registered session and no login request "do nothing"

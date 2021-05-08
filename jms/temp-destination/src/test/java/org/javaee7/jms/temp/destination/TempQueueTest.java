@@ -2,7 +2,7 @@ package org.javaee7.jms.temp.destination;
 
 import static org.junit.Assert.assertEquals;
 
-import javax.ejb.EJB;
+import jakarta.ejb.EJB;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

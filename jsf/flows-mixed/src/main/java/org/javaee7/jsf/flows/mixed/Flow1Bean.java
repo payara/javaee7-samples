@@ -40,8 +40,8 @@
 package org.javaee7.jsf.flows.mixed;
 
 import java.io.Serializable;
-import javax.faces.flow.FlowScoped;
-import javax.inject.Named;
+import jakarta.faces.flow.FlowScoped;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

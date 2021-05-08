@@ -1,11 +1,11 @@
 package org.javaee7.batch.chunk.checkpoint;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
-import static javax.batch.runtime.Metric.MetricType.COMMIT_COUNT;
-import static javax.batch.runtime.Metric.MetricType.READ_COUNT;
-import static javax.batch.runtime.Metric.MetricType.WRITE_COUNT;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.Metric.MetricType.COMMIT_COUNT;
+import static jakarta.batch.runtime.Metric.MetricType.READ_COUNT;
+import static jakarta.batch.runtime.Metric.MetricType.WRITE_COUNT;
 import static org.javaee7.batch.chunk.checkpoint.MyCheckpointAlgorithm.checkpointCountDownLatch;
 import static org.javaee7.util.BatchTestHelper.getMetricsMap;
 import static org.jboss.shrinkwrap.api.ArchivePaths.create;
@@ -17,10 +17,10 @@ import static org.junit.Assert.assertTrue;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -31,8 +31,8 @@ import org.junit.runner.RunWith;
 
 /**
  * The Batch specification provides a Chunk Oriented processing style. This style is defined by enclosing into a
- * transaction a set of reads, process and write operations via +javax.batch.api.chunk.ItemReader+,
- * +javax.batch.api.chunk.ItemProcessor+ and +javax.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
+ * transaction a set of reads, process and write operations via +jakarta.batch.api.chunk.ItemReader+,
+ * +jakarta.batch.api.chunk.ItemProcessor+ and +jakarta.batch.api.chunk.ItemWriter+. Items are read one at a time, processed
  * and aggregated. The transaction is then committed when the defined +checkpoint-policy+ is triggered.
  *
  * The +checkpoint-policy+ can be defined as +item+ or +custom+. The +item+ policy means the chunk is checkpointed after
@@ -44,8 +44,8 @@ import org.junit.runner.RunWith;
  *
  * A very simple job is defined in the +myJob.xml+ file. Just a single step with a reader, a processor and a writer. For
  * this sample, a custom checkpoint policy is going to be used. The custom policy needs to implement
- * +javax.batch.api.chunk.CheckpointAlgorithm+ or in alternative extend
- * +javax.batch.api.chunk.AbstractCheckpointAlgorithm+ that already provides empty implementations for all methods.
+ * +jakarta.batch.api.chunk.CheckpointAlgorithm+ or in alternative extend
+ * +jakarta.batch.api.chunk.AbstractCheckpointAlgorithm+ that already provides empty implementations for all methods.
  *
  * include::MyCheckpointAlgorithm[]
  *
@@ -82,7 +82,7 @@ public class BatchChunkCheckpointTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query the +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query the +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * The batch process itself will read and process 10 elements from numbers  1 to 10, but only write the odd
      * elements. Commits are executed after 5 elements are read by the custom checkpoint algorithm.

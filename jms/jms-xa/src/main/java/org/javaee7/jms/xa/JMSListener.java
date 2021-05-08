@@ -5,17 +5,17 @@ import static org.javaee7.jms.xa.DeliveryStats.countDownLatch;
 
 import java.util.logging.Logger;
 
-import javax.ejb.ActivationConfigProperty;
-import javax.ejb.EJB;
-import javax.ejb.MessageDriven;
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageListener;
+import jakarta.ejb.ActivationConfigProperty;
+import jakarta.ejb.EJB;
+import jakarta.ejb.MessageDriven;
+import jakarta.jms.JMSException;
+import jakarta.jms.Message;
+import jakarta.jms.MessageListener;
 
 @MessageDriven(
     activationConfig = { 
         @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "java:app/jms/queue"),
-        @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"), }
+        @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "jakarta.jms.Queue"), }
 )
 public class JMSListener implements MessageListener {
 

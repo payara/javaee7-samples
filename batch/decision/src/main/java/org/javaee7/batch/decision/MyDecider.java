@@ -39,9 +39,9 @@
  */
 package org.javaee7.batch.decision;
 
-import javax.batch.api.Decider;
-import javax.batch.runtime.StepExecution;
-import javax.inject.Named;
+import jakarta.batch.api.Decider;
+import jakarta.batch.runtime.StepExecution;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

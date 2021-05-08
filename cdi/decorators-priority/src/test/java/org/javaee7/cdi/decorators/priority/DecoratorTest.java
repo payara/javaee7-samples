@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 import java.io.File;
 import java.net.URISyntaxException;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

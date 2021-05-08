@@ -1,8 +1,8 @@
 package org.javaee7.jms.batch;
 
-import javax.batch.api.chunk.AbstractItemWriter;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.AbstractItemWriter;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import java.io.Serializable;
 import java.util.List;
 

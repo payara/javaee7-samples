@@ -1,13 +1,13 @@
 package org.javaee7.util;
 
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.batch.runtime.BatchRuntime;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric;
+import jakarta.batch.runtime.BatchRuntime;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric;
 
 /**
  * @author Roberto Cortez

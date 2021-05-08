@@ -2,8 +2,8 @@ package org.javaee7.json.streaming.parser;
 
 import java.io.File;
 import java.io.StringReader;
-import javax.json.Json;
-import javax.json.stream.JsonParser;
+import jakarta.json.Json;
+import jakarta.json.stream.JsonParser;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.Archive;

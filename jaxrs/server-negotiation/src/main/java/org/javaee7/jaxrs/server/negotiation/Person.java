@@ -39,7 +39,7 @@
  */
 package org.javaee7.jaxrs.server.negotiation;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author Arun Gupta

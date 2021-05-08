@@ -2,13 +2,13 @@ package org.javaee7.jacc.contexts.servlet;
 
 import java.io.IOException;
 
-import javax.security.jacc.PolicyContext;
-import javax.security.jacc.PolicyContextException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.security.jacc.PolicyContext;
+import jakarta.security.jacc.PolicyContextException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * 
@@ -26,7 +26,7 @@ public class RequestServlet extends HttpServlet {
         request.setAttribute("jaccTest", "true");
 
         try {
-            HttpServletRequest requestFromPolicy = (HttpServletRequest) PolicyContext.getContext("javax.servlet.http.HttpServletRequest");
+            HttpServletRequest requestFromPolicy = (HttpServletRequest) PolicyContext.getContext("jakarta.servlet.http.HttpServletRequest");
 
             if (requestFromPolicy != null) {
                 response.getWriter().print("Obtained request from context.");

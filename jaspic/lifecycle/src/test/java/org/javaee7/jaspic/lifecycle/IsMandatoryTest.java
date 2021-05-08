@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 import org.xml.sax.SAXException;
 
 /**
- * This tests that the "javax.security.auth.message.MessagePolicy.isMandatory" key
+ * This tests that the "jakarta.security.auth.message.MessagePolicy.isMandatory" key
  * in the message info map is "true" for a protected resource, and not "true" for
  * a public resource.
  * 

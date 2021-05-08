@@ -40,8 +40,8 @@
 package org.javaee7.concurrency.managedexecutor;
 
 import java.util.Objects;
-import javax.inject.Inject;
-import javax.transaction.Transactional;
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 
 /**
  * @author Arun Gupta

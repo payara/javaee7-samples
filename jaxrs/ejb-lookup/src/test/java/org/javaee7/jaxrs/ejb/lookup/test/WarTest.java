@@ -6,12 +6,12 @@ import static org.junit.Assert.assertNotNull;
 
 import java.net.URL;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.Entity;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.client.Client;
+import jakarta.ws.rs.client.ClientBuilder;
+import jakarta.ws.rs.client.Entity;
+import jakarta.ws.rs.client.WebTarget;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
 import org.javaee7.jaxrs.ejb.lookup.iface.jar.HelloEndpoint;
 import org.javaee7.jaxrs.ejb.lookup.iface.war.DefaultInterfaceApplication;
@@ -126,7 +126,7 @@ public class WarTest {
 
 
     /**
-     * {@link IllegalInterfaceBean} implements an interface from javax.ejb package, which is not
+     * {@link IllegalInterfaceBean} implements an interface from jakarta.ejb package, which is not
      * allowed. The bean still can be mapped with the usage of it's own name.
      *
      * @throws Exception

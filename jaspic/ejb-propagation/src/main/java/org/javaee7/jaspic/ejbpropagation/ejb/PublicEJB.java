@@ -1,8 +1,8 @@
 package org.javaee7.jaspic.ejbpropagation.ejb;
 
-import javax.annotation.Resource;
-import javax.ejb.EJBContext;
-import javax.ejb.Stateless;
+import jakarta.annotation.Resource;
+import jakarta.ejb.EJBContext;
+import jakarta.ejb.Stateless;
 
 /**
  * This is a "public" EJB in the sense that all its methods should be accessible and there is no declarative role checking prior

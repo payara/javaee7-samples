@@ -137,7 +137,7 @@ public class SecureServletTest {
         
         if (System.getProperty("ssl.debug") != null) {
             System.out.println("Setting server SSL debug on");
-            addContainerSystemProperty("javax.net.debug", "ssl:handshake");
+            addContainerSystemProperty("jakarta.net.debug", "ssl:handshake");
         }
 
         // Add the client certificate that we just generated to the trust store of the server.
@@ -235,7 +235,7 @@ public class SecureServletTest {
         //
         //        TransportContext.java:313|Fatal (INTERNAL_ERROR): closing inbound before receiving peer's close_notify (
         //        "throwable" : {
-        //          javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+        //          jakarta.net.ssl.SSLException: closing inbound before receiving peer's close_notify
         //            at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:133)
         //            at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
         //            at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
@@ -334,7 +334,7 @@ public class SecureServletTest {
     }
     
     private static void enableSSLDebug() {
-        System.setProperty("javax.net.debug", "ssl:handshake");
+        System.setProperty("jakarta.net.debug", "ssl:handshake");
         
         System.getProperties().put("org.apache.commons.logging.simplelog.defaultlog", "debug");
         Logger.getLogger("com.gargoylesoftware.htmlunit.httpclient.HtmlUnitSSLConnectionSocketFactory").setLevel(FINEST);

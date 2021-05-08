@@ -1,8 +1,8 @@
 package org.javaee7.jaxrpc.endpoint;
 
-import static javax.xml.rpc.Call.SOAPACTION_URI_PROPERTY;
-import static javax.xml.rpc.Call.SOAPACTION_USE_PROPERTY;
-import static javax.xml.rpc.ParameterMode.IN;
+import static jakarta.xml.rpc.Call.SOAPACTION_URI_PROPERTY;
+import static jakarta.xml.rpc.Call.SOAPACTION_USE_PROPERTY;
+import static jakarta.xml.rpc.ParameterMode.IN;
 import static org.jboss.shrinkwrap.api.ShrinkWrap.create;
 import static org.junit.Assert.assertEquals;
 
@@ -11,10 +11,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.RemoteException;
 
-import javax.xml.namespace.QName;
-import javax.xml.rpc.Call;
-import javax.xml.rpc.ServiceException;
-import javax.xml.rpc.ServiceFactory;
+import jakarta.xml.namespace.QName;
+import jakarta.xml.rpc.Call;
+import jakarta.xml.rpc.ServiceException;
+import jakarta.xml.rpc.ServiceFactory;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.container.test.api.RunAsClient;
@@ -28,7 +28,7 @@ import org.junit.runner.RunWith;
 public class HelloTest {
 
     private static final String WEBAPP_SRC = "src/main/webapp";
-    private static final String ENCODING_STYLE_PROPERTY = "javax.xml.rpc.encodingstyle.namespace.uri";
+    private static final String ENCODING_STYLE_PROPERTY = "jakarta.xml.rpc.encodingstyle.namespace.uri";
     private static final String NS_XSD = "http://www.w3.org/2001/XMLSchema";
 
     @ArquillianResource

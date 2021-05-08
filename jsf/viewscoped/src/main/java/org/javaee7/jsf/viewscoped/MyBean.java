@@ -41,8 +41,8 @@ package org.javaee7.jsf.viewscoped;
 
 import java.io.Serializable;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.view.ViewScoped;
+import jakarta.faces.bean.ManagedBean;
+import jakarta.faces.view.ViewScoped;
 
 /**
  * @author Arun Gupta

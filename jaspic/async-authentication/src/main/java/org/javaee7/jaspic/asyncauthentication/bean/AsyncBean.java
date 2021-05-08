@@ -5,9 +5,9 @@ import static java.lang.Thread.sleep;
 
 import java.io.IOException;
 
-import javax.ejb.Asynchronous;
-import javax.ejb.Stateless;
-import javax.servlet.AsyncContext;
+import jakarta.ejb.Asynchronous;
+import jakarta.ejb.Stateless;
+import jakarta.servlet.AsyncContext;
 
 /**
  * 

@@ -1,6 +1,6 @@
 package org.javaee7.jms.batch;
 
-import javax.ejb.Singleton;
+import jakarta.ejb.Singleton;
 
 /**
  * @author Patrik Dudits

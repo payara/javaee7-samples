@@ -1,6 +1,6 @@
 package org.javaee7.jaxrs.beanparam;
 
-import javax.ws.rs.PathParam;
+import jakarta.ws.rs.PathParam;
 
 /**
  * @author xcoulon

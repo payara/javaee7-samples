@@ -42,7 +42,7 @@ package org.javaee7.jaxrs.client;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.ejb.Singleton;
+import jakarta.ejb.Singleton;
 
 /**
  * @author Arun Gupta

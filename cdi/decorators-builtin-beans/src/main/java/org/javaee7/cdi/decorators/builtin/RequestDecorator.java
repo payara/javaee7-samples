@@ -3,11 +3,11 @@ package org.javaee7.cdi.decorators.builtin;
 
 import java.io.Serializable;
 
-import javax.annotation.Priority;
-import javax.decorator.Decorator;
-import javax.decorator.Delegate;
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.annotation.Priority;
+import jakarta.decorator.Decorator;
+import jakarta.decorator.Delegate;
+import jakarta.inject.Inject;
+import jakarta.servlet.http.HttpServletRequest;
 
 @Decorator
 @Priority(100)

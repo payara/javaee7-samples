@@ -42,8 +42,8 @@ package org.javaee7.batch.chunk.csv.database;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.StringTokenizer;
-import javax.batch.api.chunk.ItemProcessor;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.ItemProcessor;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

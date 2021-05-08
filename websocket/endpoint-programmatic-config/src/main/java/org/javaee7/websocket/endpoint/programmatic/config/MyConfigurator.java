@@ -42,10 +42,10 @@ package org.javaee7.websocket.endpoint.programmatic.config;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.websocket.Extension;
-import javax.websocket.HandshakeResponse;
-import javax.websocket.server.HandshakeRequest;
-import javax.websocket.server.ServerEndpointConfig;
+import jakarta.websocket.Extension;
+import jakarta.websocket.HandshakeResponse;
+import jakarta.websocket.server.HandshakeRequest;
+import jakarta.websocket.server.ServerEndpointConfig;
 
 /**
  * @author Arun Gupta

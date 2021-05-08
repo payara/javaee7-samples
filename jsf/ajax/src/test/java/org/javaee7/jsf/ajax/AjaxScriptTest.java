@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-import javax.xml.registry.infomodel.User;
+//import javax.xml.registry.infomodel.User;
 
 import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.WebClient;
@@ -55,7 +55,7 @@ public class AjaxScriptTest {
         final String webappDirectory = "src/main/webapp";
         final String webInfDirectory = webappDirectory + "/WEB-INF";
         return ShrinkWrap.create(WebArchive.class)
-            .addClass(User.class)
+//            .addClass(User.class)
             .addAsWebResource(new File(webappDirectory, "index.xhtml"))
             .addAsWebInfResource(new File(webInfDirectory, "web.xml"));
     }

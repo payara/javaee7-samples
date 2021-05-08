@@ -40,8 +40,8 @@
 
 package org.javaee7.batch.multiple.steps;
 
-import javax.batch.api.AbstractBatchlet;
-import javax.inject.Named;
+import jakarta.batch.api.AbstractBatchlet;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

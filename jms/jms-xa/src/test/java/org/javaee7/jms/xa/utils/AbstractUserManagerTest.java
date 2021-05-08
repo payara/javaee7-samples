@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Logger;
 
-import javax.ejb.EJB;
+import jakarta.ejb.EJB;
 
 import org.javaee7.jms.xa.DeliveryStats;
 import org.javaee7.jms.xa.UserManager;

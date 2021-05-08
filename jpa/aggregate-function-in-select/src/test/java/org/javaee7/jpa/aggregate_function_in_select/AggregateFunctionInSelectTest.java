@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import java.io.File;
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.javaee7.jpa.aggregate_function_in_select.entity.AggregatedTestEntity;
 import org.javaee7.jpa.aggregate_function_in_select.service.TestService;

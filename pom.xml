@@ -49,7 +49,7 @@
             Application Server versions
             (these are downloaded and installed in these versions by Maven for the CI profiles)
          -->
-        <payara.version>4.1.2.181</payara.version>
+        <payara.version>6.2021.1-SNAPSHOT</payara.version>
         <payara_domain>domain1</payara_domain>
         <glassfish.client.version>5.0</glassfish.client.version> <!-- For remote EJB for Payara and Glassfish -->
         <glassfish.version>4.1.1</glassfish.version>
@@ -59,7 +59,7 @@
         <tomee.version>7.0.2</tomee.version>
         <tomcat.version>9.0.4</tomcat.version>
 
-        <payara.arquillian.version>2.4.1</payara.arquillian.version>
+        <payara.arquillian.version>3.0.alpha1</payara.arquillian.version>
     </properties>
 
     <prerequisites>
@@ -143,7 +143,7 @@
             </dependency>
             <dependency>
                 <groupId>fish.payara.arquillian</groupId>
-                <artifactId>payara-client-ee7</artifactId>
+                <artifactId>payara-client-ee9</artifactId>
                 <version>${payara.arquillian.version}</version>
                 <scope>test</scope>
             </dependency>
@@ -178,9 +178,9 @@
              providing samples for.
          -->
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>9.1.0-RC1</version>
             <scope>provided</scope>
         </dependency>
 
@@ -287,12 +287,12 @@
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
-            <version>2.3.3</version>
+            <version>3.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jaxb</groupId>
             <artifactId>jaxb-runtime</artifactId>
-            <version>2.3.3</version>
+            <version>3.0.1</version>
         </dependency>
     </dependencies>
 
@@ -397,8 +397,8 @@
                 </property>
             </activation>
             <properties>
-                <payara.directory.name>payara5</payara.directory.name>
-                <payara.version.major>5</payara.version.major>
+                <payara.directory.name>payara6</payara.directory.name>
+                <payara.version.major>6</payara.version.major>
             </properties>
         </profile>
 
@@ -411,8 +411,8 @@
                 </property>
             </activation>
             <properties>
-                <payara.directory.name>payara5</payara.directory.name>
-                <payara.version.major>5</payara.version.major>
+                <payara.directory.name>payara6</payara.directory.name>
+                <payara.version.major>6</payara.version.major>
             </properties>
         </profile>
 
@@ -427,7 +427,7 @@
                  <!-- Java EE based client dependencies to contact a server via WebSocket or REST -->
                 <dependency>
                     <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>payara-client-ee7</artifactId>
+                    <artifactId>payara-client-ee9</artifactId>
                 </dependency>
 
                 <!-- The actual Arquillian connector -->
@@ -506,7 +506,7 @@
                 <!-- Java EE based client dependencies to contact a server via WebSocket or REST -->
                 <dependency>
                     <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>payara-client-ee7</artifactId>
+                    <artifactId>payara-client-ee9</artifactId>
                 </dependency>
 
                 <!-- The Arquillian connector -->
@@ -585,7 +585,7 @@
                 <!-- Java EE based client dependencies to contact a server via WebSocket or REST -->
                 <dependency>
                     <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>payara-client-ee7</artifactId>
+                    <artifactId>payara-client-ee9</artifactId>
                     <exclusions>
                         <exclusion>
                             <groupId>org.glassfish.grizzly</groupId>
@@ -631,7 +631,7 @@
                 <!-- Java EE based client dependencies to contact a server via WebSocket or REST -->
                 <dependency>
                     <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>payara-client-ee7</artifactId>
+                    <artifactId>payara-client-ee9</artifactId>
                 </dependency>
 
                 <!-- The actual Arquillian connector -->
@@ -695,7 +695,7 @@
                 be on the classpath -->
                 <dependency>
                     <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>payara-client-ee7</artifactId>
+                    <artifactId>payara-client-ee9</artifactId>
                 </dependency>
 
                 <!-- The actual Arquillian connector -->
@@ -827,26 +827,26 @@
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish</groupId>
-                    <artifactId>javax.json</artifactId>
-                    <version>1.0.4</version>
+                    <artifactId>jakarta.json</artifactId>
+                    <version>2.0.1</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.tyrus</groupId>
                     <artifactId>tyrus-client</artifactId>
-                    <version>1.3</version>
+                    <version>2.0.0</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.tyrus</groupId>
                     <artifactId>tyrus-container-grizzly-client</artifactId>
-                    <version>1.3</version>
+                    <version>2.0.0</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.core</groupId>
                     <artifactId>jersey-client</artifactId>
-                    <version>2.4</version>
+                    <version>3.0.2</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
@@ -875,7 +875,7 @@
             <dependencies>
                 <dependency>
                     <groupId>org.glassfish</groupId>
-                    <artifactId>javax.json</artifactId>
+                    <artifactId>jakarta.json</artifactId>
                     <version>1.0.4</version>
                     <scope>test</scope>
                 </dependency>
@@ -1390,7 +1390,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <systemPropertyVariables>
-                                <javax.el.ExpressionFactory>org.apache.el.ExpressionFactoryImpl</javax.el.ExpressionFactory>
+                                <jakarta.el.ExpressionFactory>org.apache.el.ExpressionFactoryImpl</jakarta.el.ExpressionFactory>
                             </systemPropertyVariables>
                         </configuration>
                     </plugin>
@@ -1491,10 +1491,10 @@
                                     openejb.environment.default=true
 
                                     # see additionalLibs
-                                    javax.persistence.provider = org.eclipse.persistence.jpa.PersistenceProvider
+                                    jakarta.persistence.provider = org.eclipse.persistence.jpa.PersistenceProvider
                                 </tomee.properties>
                                 <tomee.additionalLibs>
-                                    # OpenJPA is not yet JPA 2.1 and a lot of test - not only JPA - rely on javax.persistence properties
+                                    # OpenJPA is not yet JPA 2.1 and a lot of test - not only JPA - rely on jakarta.persistence properties
                                     remove:openjpa
                                     mvn:org.eclipse.persistence:eclipselink:2.5.2
                                     mvn:org.eclipse.persistence:commonj.sdo:2.1.1
@@ -1534,7 +1534,7 @@
                 </dependency>
                 <dependency>
                    <groupId>org.glassfish</groupId>
-                   <artifactId>javax.json</artifactId>
+                   <artifactId>jakarta.json</artifactId>
                    <version>1.0.4</version>
                    <scope>test</scope>
                 </dependency>

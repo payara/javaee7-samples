@@ -1,9 +1,9 @@
 package org.javaee7.jacc.contexts.bean;
 
-import javax.ejb.Stateless;
-import javax.security.jacc.PolicyContext;
-import javax.security.jacc.PolicyContextException;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.ejb.Stateless;
+import jakarta.security.jacc.PolicyContext;
+import jakarta.security.jacc.PolicyContextException;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * 
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 public class JaccRequestBean {
 
     public HttpServletRequest getRequest() throws PolicyContextException {
-        return (HttpServletRequest) PolicyContext.getContext("javax.servlet.http.HttpServletRequest");
+        return (HttpServletRequest) PolicyContext.getContext("jakarta.servlet.http.HttpServletRequest");
     }
 
     public boolean hasAttribute() throws PolicyContextException {

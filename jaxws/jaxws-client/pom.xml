@@ -16,8 +16,9 @@
         <plugins>
             <plugin>
                 <!-- wsimport for web service classes generation -->
-                <groupId>com.helger.maven</groupId>
+                <groupId>com.sun.xml.ws</groupId>
                 <artifactId>jaxws-maven-plugin</artifactId>
+                <version>3.0.0</version>
                 <executions>
                     <execution>
                         <phase>generate-sources</phase>

@@ -40,8 +40,8 @@
 package org.javaee7.websocket.whiteboard;
 
 import java.io.StringWriter;
-import javax.json.Json;
-import javax.json.JsonObject;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
 
 /**
  * @author Arun Gupta

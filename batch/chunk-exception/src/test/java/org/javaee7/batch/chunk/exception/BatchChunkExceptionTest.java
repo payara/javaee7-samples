@@ -1,9 +1,9 @@
 package org.javaee7.batch.chunk.exception;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
-import static javax.batch.runtime.Metric.MetricType.PROCESS_SKIP_COUNT;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.Metric.MetricType.PROCESS_SKIP_COUNT;
 import static org.javaee7.batch.chunk.exception.ChunkExceptionRecorder.chunkExceptionsCountDownLatch;
 import static org.javaee7.batch.chunk.exception.ChunkExceptionRecorder.retryReadExecutions;
 import static org.javaee7.util.BatchTestHelper.getMetricsMap;
@@ -18,10 +18,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.Metric.MetricType;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.Metric.MetricType;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -69,12 +69,12 @@ import org.junit.runner.RunWith;
  *
  * Events can be caught via extending the following classes, for the appropriate batch lifecycle event:
  *
- * * +javax.batch.api.chunk.listener.SkipReadListener+
- * * +javax.batch.api.chunk.listener.SkipProcessListener+
- * * +javax.batch.api.chunk.listener.SkipWriteListener+
- * * +javax.batch.api.chunk.listener.RetryReadListener+
- * * +javax.batch.api.chunk.listener.RetryProcessListener+
- * * +javax.batch.api.chunk.listener.RetryWriteListener+
+ * * +jakarta.batch.api.chunk.listener.SkipReadListener+
+ * * +jakarta.batch.api.chunk.listener.SkipProcessListener+
+ * * +jakarta.batch.api.chunk.listener.SkipWriteListener+
+ * * +jakarta.batch.api.chunk.listener.RetryReadListener+
+ * * +jakarta.batch.api.chunk.listener.RetryProcessListener+
+ * * +jakarta.batch.api.chunk.listener.RetryWriteListener+
  *
  * include::myJob.xml[]
  *
@@ -115,7 +115,7 @@ public class BatchChunkExceptionTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query the +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query the +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * @throws Exception an exception if the batch could not complete successfully.
      */

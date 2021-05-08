@@ -1,8 +1,8 @@
 package org.javaee7.ejb.timer;
 
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
-import javax.enterprise.event.Observes;
+import jakarta.ejb.Singleton;
+import jakarta.ejb.Startup;
+import jakarta.enterprise.event.Observes;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 

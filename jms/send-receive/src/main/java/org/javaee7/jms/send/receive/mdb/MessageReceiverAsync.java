@@ -41,12 +41,12 @@ package org.javaee7.jms.send.receive.mdb;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.ejb.ActivationConfigProperty;
-import javax.ejb.MessageDriven;
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageListener;
-import javax.jms.TextMessage;
+import jakarta.ejb.ActivationConfigProperty;
+import jakarta.ejb.MessageDriven;
+import jakarta.jms.JMSException;
+import jakarta.jms.Message;
+import jakarta.jms.MessageListener;
+import jakarta.jms.TextMessage;
 
 import org.javaee7.jms.send.receive.Resources;
 
@@ -59,7 +59,7 @@ import org.javaee7.jms.send.receive.Resources;
     @ActivationConfigProperty(propertyName = "destinationLookup",
             propertyValue = Resources.ASYNC_QUEUE),
     @ActivationConfigProperty(propertyName = "destinationType",
-            propertyValue = "javax.jms.Queue"),})
+            propertyValue = "jakarta.jms.Queue"),})
 public class MessageReceiverAsync implements MessageListener {
 
     @Override

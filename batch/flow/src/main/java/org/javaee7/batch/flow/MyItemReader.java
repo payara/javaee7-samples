@@ -40,8 +40,8 @@
 package org.javaee7.batch.flow;
 
 import java.util.StringTokenizer;
-import javax.batch.api.chunk.AbstractItemReader;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.AbstractItemReader;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

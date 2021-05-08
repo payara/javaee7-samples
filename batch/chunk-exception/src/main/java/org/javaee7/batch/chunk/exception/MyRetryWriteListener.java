@@ -1,7 +1,7 @@
 package org.javaee7.batch.chunk.exception;
 
-import javax.batch.api.chunk.listener.RetryWriteListener;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.listener.RetryWriteListener;
+import jakarta.inject.Named;
 import java.util.List;
 
 /**

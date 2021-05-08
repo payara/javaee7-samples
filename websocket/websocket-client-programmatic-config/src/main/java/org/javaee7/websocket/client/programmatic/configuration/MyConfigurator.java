@@ -41,8 +41,8 @@ package org.javaee7.websocket.client.programmatic.configuration;
 
 import java.util.List;
 import java.util.Map;
-import javax.websocket.ClientEndpointConfig;
-import javax.websocket.HandshakeResponse;
+import jakarta.websocket.ClientEndpointConfig;
+import jakarta.websocket.HandshakeResponse;
 
 /**
  * @author Arun Gupta

@@ -42,8 +42,8 @@ package org.javaee7.batch.chunk.checkpoint;
 
 import java.util.concurrent.CountDownLatch;
 
-import javax.batch.api.chunk.AbstractCheckpointAlgorithm;
-import javax.inject.Named;
+import jakarta.batch.api.chunk.AbstractCheckpointAlgorithm;
+import jakarta.inject.Named;
 
 /**
  * @author Arun Gupta

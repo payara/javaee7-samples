@@ -7,8 +7,8 @@ import static org.junit.Assert.assertThat;
 
 import java.io.File;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.inject.Inject;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.javaee7.cdi.decorators.builtin.RequestDecorator;
 import org.jboss.arquillian.container.test.api.Deployment;

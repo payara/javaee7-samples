@@ -1,7 +1,7 @@
 package org.javaee7.batch.decision;
 
-import static javax.batch.runtime.BatchRuntime.getJobOperator;
-import static javax.batch.runtime.BatchStatus.COMPLETED;
+import static jakarta.batch.runtime.BatchRuntime.getJobOperator;
+import static jakarta.batch.runtime.BatchStatus.COMPLETED;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import javax.batch.operations.JobOperator;
-import javax.batch.runtime.JobExecution;
-import javax.batch.runtime.StepExecution;
+import jakarta.batch.operations.JobOperator;
+import jakarta.batch.runtime.JobExecution;
+import jakarta.batch.runtime.StepExecution;
 
 import org.javaee7.util.BatchTestHelper;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -27,9 +27,9 @@ import org.junit.runner.RunWith;
 /**
  * The Batch specification allows you to implement process workflow using a Job Specification Language (JSL). In this
  * sample, by using the +decision+ element, it's possible to configure a job that follows different paths of execution
- * based on your own criteria by implementing a +javax.batch.api.Decider+
+ * based on your own criteria by implementing a +jakarta.batch.api.Decider+
  *
- * The +javax.batch.api.Decider+ just needs to return a meaningful value, to use in the +myJob.xml+ file to be able to
+ * The +jakarta.batch.api.Decider+ just needs to return a meaningful value, to use in the +myJob.xml+ file to be able to
  * reference the next step that must be executed.
  *
  * include::myJob.xml[]
@@ -65,8 +65,8 @@ public class BatchDecisionTest {
 
     /**
      * In the test, we're just going to invoke the batch execution and wait for completion. To validate the test
-     * expected behaviour we need to query +javax.batch.operations.JobOperator#getStepExecutions+ and the
-     * +javax.batch.runtime.Metric+ object available in the step execution.
+     * expected behaviour we need to query +jakarta.batch.operations.JobOperator#getStepExecutions+ and the
+     * +jakarta.batch.runtime.Metric+ object available in the step execution.
      *
      * @throws Exception an exception if the batch could not complete successfully.
      */

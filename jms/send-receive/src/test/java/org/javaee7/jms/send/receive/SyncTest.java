@@ -6,9 +6,9 @@ import org.javaee7.jms.send.receive.classic.ClassicMessageReceiver;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import javax.ejb.EJB;
-import javax.jms.JMSException;
-import javax.jms.JMSRuntimeException;
+import jakarta.ejb.EJB;
+import jakarta.jms.JMSException;
+import jakarta.jms.JMSRuntimeException;
 
 import org.javaee7.jms.send.receive.simple.MessageReceiverSync;
 import org.javaee7.jms.send.receive.simple.MessageSenderSync;

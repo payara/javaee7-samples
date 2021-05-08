@@ -40,9 +40,9 @@
 package org.javaee7.websocket.injection;
 
 import java.util.logging.Logger;
-import javax.interceptor.AroundInvoke;
-import javax.interceptor.Interceptor;
-import javax.interceptor.InvocationContext;
+import jakarta.interceptor.AroundInvoke;
+import jakarta.interceptor.Interceptor;
+import jakarta.interceptor.InvocationContext;
 
 /**
  * @author Arun Gupta

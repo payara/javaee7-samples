@@ -10,8 +10,8 @@ import java.security.cert.Certificate;
 import java.util.logging.Logger;
 
 import javax.security.auth.Subject;
-import javax.security.jacc.PolicyContext;
-import javax.security.jacc.WebResourcePermission;
+import jakarta.security.jacc.PolicyContext;
+import jakarta.security.jacc.WebResourcePermission;
 
 /**
  * 

@@ -1,6 +1,6 @@
 package org.javaee7.jaxrs.beanparam;
 
-import javax.ws.rs.QueryParam;
+import jakarta.ws.rs.QueryParam;
 
 /**
  * @author xcoulon

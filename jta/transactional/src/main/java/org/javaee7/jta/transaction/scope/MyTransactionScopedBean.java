@@ -40,7 +40,7 @@
 package org.javaee7.jta.transaction.scope;
 
 import java.io.Serializable;
-import javax.transaction.TransactionScoped;
+import jakarta.transaction.TransactionScoped;
 
 /**
  * @author Arun Gupta
